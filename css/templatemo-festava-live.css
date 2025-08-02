@@ -685,7 +685,15 @@ strong {
 /*---------------------------------------
   ARTISTS              
 -----------------------------------------*/
-
+.artists-section{
+  background: url('../images/artist.jpg');
+  background-size: cover;
+  padding: 20vh 0;  
+  display: flex;
+  justify-content: center;
+  /* background: #000; */
+  align-items: center;
+}
 .artists-thumb {
   position: relative;
   overflow: hidden;
@@ -1490,4 +1498,7 @@ img:nth-child(15) {
 }
 .sachinImg{
   width: 50vw;
+}
+.guessText{
+  font-size: 10rem;
 }
