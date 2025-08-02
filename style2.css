@@ -260,7 +260,9 @@ ul {
 .CopyrightTxt{
   font-size: 1.3rem;
   padding-left: 20px;
+  text-align: center;
 }
+
 .f-center {
   align-items: center;
 }
@@ -279,7 +281,7 @@ ul {
   text-transform: uppercase;
 }
 .space{
-  height: 130px;
+  height: 60vh;
 }
 .btn-join > span {
   height: 100%;
@@ -1074,6 +1076,7 @@ body.submit .active-submit {
 }
 .l-hero {
   padding: 250px var(--grid-margin) 0;
+  background: linear-gradient(#3E000C, transparent);
 }
 .l-hero .right {
   width: calc((4 * var(--grid-column-width)) + (4 - 1) * var(--grid-gutter));
