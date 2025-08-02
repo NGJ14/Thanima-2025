@@ -1469,6 +1469,7 @@ body.chrome .logo_bl {
       (12 * var(--grid-column-width)) + (12 - 1) * var(--grid-gutter)
     );
   }
+  
 }
 @media (max-width: 768px) {
   .mwg_landing3 {
@@ -1482,6 +1483,9 @@ body.chrome .logo_bl {
   }
   .mwg_landing3 .lt {
     right: 8px;
+  }
+  .mwg_landing3{
+    background-position: center;
   }
 }
 .l-details {
