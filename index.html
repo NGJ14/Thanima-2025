@@ -1,545 +1,609 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Thanima 2025</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/png" href="https://madewithgsap.com/assets/img/fav/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="https://madewithgsap.com/assets/img/fav/favicon.svg">
-  <link rel="icon" type="image/x-icon" href="https://madewithgsap.com/assets/img/fav/favicon.ico">
-  <link rel="shortcut icon" href="https://madewithgsap.com/assets/img/fav/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://madewithgsap.com/assets/img/fav/apple-touch-icon.png">
-  <link rel="manifest" href="https://madewithgsap.com/assets/img/fav/site.webmanifest">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="twitter:creator" content="@madewithgsap">
-  <meta name="twitter:url" content="https://x.com/madewithgsap">
-  <meta property="og:site_name" content="Made With Gsap">
-  <meta property="og:locale" content="en_gb">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://madewithgsap.com">
-  <meta property="og:image" content="https://madewithgsap.com/assets/img/og.jpg">
-  <meta property="og:image:secure_url" content="https://madewithgsap.com/assets/img/og.jpg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:image" content="https://madewithgsap.com/assets/img/og.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#F1F1F1">
-  <meta name="msapplication-TileColor" content="#F1F1F1">
-  <link rel="canonical" href="https://madewithgsap.com/">
-  <meta property="og:title" content="Made With Gsap">
-  <meta name="twitter:title" content="Made With Gsap">
-  <meta name="description"
-    content="A collection of 50 premium JavaScript effects made with GSAP. Showcasing scroll, drag, mouse move, infinite animations and more.">
-  <meta property="og:description"
-    content="A collection of 50 premium JavaScript effects made with GSAP. Showcasing scroll, drag, mouse move, infinite animations and more.">
-  <meta property="og:image:alt"
-    content="A collection of 50 premium JavaScript effects made with GSAP. Showcasing scroll, drag, mouse move, infinite animations and more.">
-  <meta name="twitter:description"
-    content="A collection of 50 premium JavaScript effects made with GSAP. Showcasing scroll, drag, mouse move, infinite animations and more.">
-  <meta name="twitter:image:alt"
-    content="A collection of 50 premium JavaScript effects made with GSAP. Showcasing scroll, drag, mouse move, infinite animations and more.">
-  <link rel="stylesheet" href="https://madewithgsap.com/assets/tutorial/prism.css">
-  <script defer="defer" src="https://www.googletagmanager.com/gtag/js?id=G-X8E3JZCS2L"></script>
-  <script defer="defer">
-    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-X8E3JZCS2L');
-  </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="Thanima 2024">
+    <meta property="og:site_name" content="Thanima 2024">
+    <meta property="og:site_name" content="Thanima 2024">
+
+    <title>Thanima 2024</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <script type="application/ld+json">
+        {
+          "@context" : "https://schema.org",
+          "@type" : "WebSite",
+          "name" : "Thanima 2024",
+          "alternateName" : "Thanima",
+          "url" : "https://thanima.vit.ac.in/",
+        }
+      </script> 
+
 </head>
 
-<body class="homepage">
-  <header class="navigation pf g f-center">
-    <div>
-      <img class="navLogo" src="./images/thanima.png" alt="">
+<body>
+
+    <div id="loading" class="w-full h-full fixed top-0 left-0 bg-black opacity-95 z-50">
+        <div class="flex justify-center items-center m42">
+            <div class="loader" id="loader"></div>
+        </div>
     </div>
-      </header>
-  <div class="intro intro-first pf" aria-hidden="true"></div>
-  <div class="message p-small pr backdrop">
-    <button class="pa close-message"><img src="https://madewithgsap.com/assets/img/close.svg" alt=""></button>
-  </div>
-  <section class="l-thankyou pf">
-    <div class="fond pa"></div><svg class="plus" fill="none" height="159" viewbox="0 0 162 159" width="162"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="m64.7178 102.315c0-4.1157 3.1655-7.2812 7.2807-7.2812h17.7271c4.1152 0 7.2807-3.1656 7.2807-7.2808v-17.0939c0-4.1152 3.1657-7.2808 7.2807-7.2808h57.296v31.6555h-57.296c-4.115 0-7.2807 3.1655-7.2807 7.2812v56.03h-32.2885zm-64.577175-7.2812v-31.6555h57.296375c4.1152 0 7.2808-3.1655 7.2808-7.2807v-56.0302172h32.2885v56.0302172c0 4.1152-3.1655 7.2807-7.2807 7.2807h-17.7271c-4.1152 0-7.2807 3.1656-7.2807 7.2808v17.0939c0 4.1152-3.1656 7.2808-7.2808 7.2808z"
-        fill="#71CFA3"></path>
-    </svg> <svg class="plus" fill="none" height="159" viewbox="0 0 162 159" width="162"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="m64.7178 102.315c0-4.1157 3.1655-7.2812 7.2807-7.2812h17.7271c4.1152 0 7.2807-3.1656 7.2807-7.2808v-17.0939c0-4.1152 3.1657-7.2808 7.2807-7.2808h57.296v31.6555h-57.296c-4.115 0-7.2807 3.1655-7.2807 7.2812v56.03h-32.2885zm-64.577175-7.2812v-31.6555h57.296375c4.1152 0 7.2808-3.1655 7.2808-7.2807v-56.0302172h32.2885v56.0302172c0 4.1152-3.1655 7.2807-7.2807 7.2807h-17.7271c-4.1152 0-7.2807 3.1656-7.2807 7.2808v17.0939c0 4.1152-3.1656 7.2808-7.2808 7.2808z"
-        fill="#BCEFFF"></path>
-    </svg> <svg class="plus" fill="none" height="159" viewbox="0 0 162 159" width="162"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="m64.7178 102.315c0-4.1157 3.1655-7.2812 7.2807-7.2812h17.7271c4.1152 0 7.2807-3.1656 7.2807-7.2808v-17.0939c0-4.1152 3.1657-7.2808 7.2807-7.2808h57.296v31.6555h-57.296c-4.115 0-7.2807 3.1655-7.2807 7.2812v56.03h-32.2885zm-64.577175-7.2812v-31.6555h57.296375c4.1152 0 7.2808-3.1655 7.2808-7.2807v-56.0302172h32.2885v56.0302172c0 4.1152-3.1655 7.2807-7.2807 7.2807h-17.7271c-4.1152 0-7.2807 3.1656-7.2807 7.2808v17.0939c0 4.1152-3.1656 7.2808-7.2808 7.2808z"
-        fill="#C9FE6E"></path>
-    </svg>
-    <div class="container">
-      <p class="sm-title2">Thank you <span class="hide">for your
-          interest and welcome</span>!</p>
-      <p class="sm-title2">We’ve just sent you an email! Check your
-        inbox (and spam folder) and save our email so you don’t miss
-        what’s next!</p>
-      <div class="monos">
-        <p class="mono">Meanwhile, rendez-vous here:</p>
-        <p class="mono social"><a tabindex="-1" href="https://x.com/madewithgsap" target="_blank"
-            rel="noreferrer">X(Twitter)</a> <a tabindex="-1" href="https://www.instagram.com/madewithgsap"
-            target="_blank" rel="noreferrer">Instagram</a> <a tabindex="-1"
-            href="https://bsky.app/profile/madewithgsap.bsky.social" target="_blank" rel="noreferrer">Bluesky</a> <a
-            tabindex="-1" href="https://www.linkedin.com/company/madewithgsap/" target="_blank"
-            rel="noreferrer">Linkedin</a></p>
-      </div><button class="btn-join btn-back-home" tabindex="-1"><img class="stag st1 ico-enter"
-          src="https://madewithgsap.com/assets/img/enter.svg" alt="">
-        <span><span class="stag st2">Back</span> <span class="stag st3">home</span></span></button>
-    </div>
-  </section>
-  <main>
-    <section class="l-hero f f-space">
-      <h1 class="sr-only">A collection of JS effects Made With
-        Gsap</h1>
-      <div class="p-title p-title-home" aria-hidden="true">
-        <div class="anim-title anim-title1 f">
-          <span>&nbsp;</span> <span><span>T</span>
-            <span>T</span></span> <span><span>H</span>
-            <span>H</span></span> <span><span>A</span>
-            <span>A</span></span> <span><span>N</span>
-            <span>N</span></span> <span><span>I</span>
-            <span>I</span></span> <span><span>M</span>
-            <span>M</span></span> <span><span>A</span>
-            <span>A</span></span>
-        </div>
-        <div class="anim-title anim-title1 f">
-          <span><span>&nbsp;</span> <span>&nbsp;</span></span>
-          <span><span>2</span> <span>2</span></span>
-          <span><span>0</span> <span>0</span></span>
-          <span><span>2</span> <span>2</span></span>
-          <span><span>5</span> <span>5</span></span>
 
-        </div>
-        <g fill="#1A1A1A">
-          <g class="l">
-            <path
-              d="M72 2.21362V74.0025H61.5V13.437L41 74.0025H31L10.5 13.437V74.0025H0V2.21362H16.3L36 61.1614L55.7 2.21362H72Z">
-            </path>
-            <path class="d"
-              d="M72 2.21362V74.0025H61.5V13.437L41 74.0025H31L10.5 13.437V74.0025H0V2.21362H16.3L36 61.1614L55.7 2.21362H72Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M95.7508 75.2157C85.8508 75.2157 78.0508 69.5535 78.0508 59.4423C78.0508 49.3312 85.9508 46.0957 98.4508 42.759C106.451 40.5346 111.851 39.5235 111.851 35.2768C111.851 31.5357 108.251 28.7046 101.451 28.7046C94.6508 28.7046 90.1508 31.6368 89.5508 37.5012H79.5508C80.8508 28.3001 88.4508 21.4246 101.551 21.4246C114.651 21.4246 121.951 27.0868 121.951 37.4001V74.0023H112.451V64.8012C110.651 70.4635 105.351 75.2157 95.7508 75.2157ZM98.5508 67.9357C107.251 67.9357 112.251 60.3523 112.251 51.7579V42.1523C111.051 45.0846 107.451 46.7023 101.551 48.4212C93.6508 50.6457 88.4508 52.9712 88.4508 59.139C88.4508 64.8012 92.7508 67.9357 98.5508 67.9357Z">
-            </path>
-            <path class="d"
-              d="M95.7508 75.2157C85.8508 75.2157 78.0508 69.5535 78.0508 59.4423C78.0508 49.3312 85.9508 46.0957 98.4508 42.759C106.451 40.5346 111.851 39.5235 111.851 35.2768C111.851 31.5357 108.251 28.7046 101.451 28.7046C94.6508 28.7046 90.1508 31.6368 89.5508 37.5012H79.5508C80.8508 28.3001 88.4508 21.4246 101.551 21.4246C114.651 21.4246 121.951 27.0868 121.951 37.4001V74.0023H112.451V64.8012C110.651 70.4635 105.351 75.2157 95.7508 75.2157ZM98.5508 67.9357C107.251 67.9357 112.251 60.3523 112.251 51.7579V42.1523C111.051 45.0846 107.451 46.7023 101.551 48.4212C93.6508 50.6457 88.4508 52.9712 88.4508 59.139C88.4508 64.8012 92.7508 67.9357 98.5508 67.9357Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M148.901 75.2158C135.801 75.2158 127.301 63.9925 127.301 48.3203C127.301 32.6481 135.801 21.4247 148.901 21.4247C156.401 21.4247 161.901 24.9636 165.001 30.727V2.21362H175.001V74.0025H165.001V65.9136C161.901 71.677 156.401 75.2158 148.901 75.2158ZM151.601 67.3292C160.401 67.3292 165.301 59.4425 165.301 48.3203C165.301 37.1981 160.401 29.3114 151.601 29.3114C142.801 29.3114 137.901 37.1981 137.901 48.3203C137.901 59.4425 142.901 67.3292 151.601 67.3292Z">
-            </path>
-            <path class="d"
-              d="M148.901 75.2158C135.801 75.2158 127.301 63.9925 127.301 48.3203C127.301 32.6481 135.801 21.4247 148.901 21.4247C156.401 21.4247 161.901 24.9636 165.001 30.727V2.21362H175.001V74.0025H165.001V65.9136C161.901 71.677 156.401 75.2158 148.901 75.2158ZM151.601 67.3292C160.401 67.3292 165.301 59.4425 165.301 48.3203C165.301 37.1981 160.401 29.3114 151.601 29.3114C142.801 29.3114 137.901 37.1981 137.901 48.3203C137.901 59.4425 142.901 67.3292 151.601 67.3292Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M180.648 48.219C180.648 32.8501 190.548 21.4246 205.748 21.4246C220.948 21.4246 231.048 34.1646 230.348 50.3423H191.048C191.448 60.7568 196.848 67.5312 206.148 67.5312C213.348 67.5312 217.348 63.0823 219.248 57.6223H229.348C226.548 67.8346 218.448 75.2157 206.048 75.2157C190.748 75.2157 180.648 63.7901 180.648 48.219ZM220.048 43.3657C218.648 34.7712 213.748 29.109 205.748 29.109C197.748 29.109 192.748 34.6701 191.348 43.3657H220.048Z">
-            </path>
-            <path class="d"
-              d="M180.648 48.219C180.648 32.8501 190.548 21.4246 205.748 21.4246C220.948 21.4246 231.048 34.1646 230.348 50.3423H191.048C191.448 60.7568 196.848 67.5312 206.148 67.5312C213.348 67.5312 217.348 63.0823 219.248 57.6223H229.348C226.548 67.8346 218.448 75.2157 206.048 75.2157C190.748 75.2157 180.648 63.7901 180.648 48.219ZM220.048 43.3657C218.648 34.7712 213.748 29.109 205.748 29.109C197.748 29.109 192.748 34.6701 191.348 43.3657H220.048Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M326 2.21362H336.9L318.9 74.0025H307.1L291.7 15.6614L276.2 74.0025H264.5L246.5 2.21362H257.3L270.9 61.2625L285.9 2.21362H297.4L312.4 61.0603L326 2.21362Z">
-            </path>
-            <path class="d"
-              d="M326 2.21362H336.9L318.9 74.0025H307.1L291.7 15.6614L276.2 74.0025H264.5L246.5 2.21362H257.3L270.9 61.2625L285.9 2.21362H297.4L312.4 61.0603L326 2.21362Z">
-            </path>
-          </g>
-          <g class="l">
-            <path d="M341.16 21.4247V74.0025H351.06L351.06 21.4247H341.16Z"></path>
-            <path d="M341.148 2.21362H351.048V12.2236H341.148V2.21362Z"></path>
-            <path class="d" d="M341.16 21.4247V74.0025H351.06L351.06 21.4247H341.16Z"></path>
-            <path class="d" d="M341.148 2.21362H351.048V12.2236H341.148V2.21362Z"></path>
-          </g>
-          <g class="l">
-            <path
-              d="M374.769 21.4349C373.499 21.4349 372.519 22.4257 372.519 23.7099V29.0586C372.519 30.3427 371.539 31.3336 370.269 31.3336H364.779C363.509 31.3336 362.539 32.3245 362.539 33.6086V60.8581C362.539 69.7559 365.239 74.0025 374.639 74.0025H388.86V64.0936H374.769C373.519 64.0936 372.509 63.0724 372.519 61.8085V57.9259L372.529 51.1413V33.6086C372.529 32.3549 373.539 31.3336 374.779 31.3336H388.86V21.4349H374.769Z">
-            </path>
-            <path
-              d="M364.782 21.4348H370.272C371.542 21.4348 372.522 20.444 372.522 19.1598V2.21362H362.532V19.1497C362.532 20.4338 361.552 21.4247 360.282 21.4247L351 21.4348V31.3336H360.282C361.552 31.3336 362.532 30.3427 362.532 29.0586V23.7098C362.532 22.4257 363.512 21.4348 364.782 21.4348Z">
-            </path>
-            <path class="d"
-              d="M374.769 21.4349C373.499 21.4349 372.519 22.4257 372.519 23.7099V29.0586C372.519 30.3427 371.539 31.3336 370.269 31.3336H364.779C363.509 31.3336 362.539 32.3245 362.539 33.6086V60.8581C362.539 69.7559 365.239 74.0025 374.639 74.0025H388.86V64.0936H374.769C373.519 64.0936 372.509 63.0724 372.519 61.8085V57.9259L372.529 51.1413V33.6086C372.529 32.3549 373.539 31.3336 374.779 31.3336H388.86V21.4349H374.769Z">
-            </path>
-            <path class="d"
-              d="M364.782 21.4348H370.272C371.542 21.4348 372.522 20.444 372.522 19.1598V2.21362H362.532V19.1497C362.532 20.4338 361.552 21.4247 360.282 21.4247L351 21.4348V31.3336H360.282C361.552 31.3336 362.532 30.3427 362.532 29.0586V23.7098C362.532 22.4257 363.512 21.4348 364.782 21.4348Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M398.661 31.0303C401.261 26.0758 406.261 21.4247 415.261 21.4247H415.271C426.271 21.4247 432.071 27.997 432.071 38.3103V74.0025H422.171V40.2314C422.171 33.5581 419.171 29.5136 411.471 29.5136C404.271 29.5136 398.671 35.1758 398.671 44.2758V74.0025H388.801V2.21362H398.661V31.0303Z">
-            </path>
-            <path class="d"
-              d="M398.661 31.0303C401.261 26.0758 406.261 21.4247 415.261 21.4247H415.271C426.271 21.4247 432.071 27.997 432.071 38.3103V74.0025H422.171V40.2314C422.171 33.5581 419.171 29.5136 411.471 29.5136C404.271 29.5136 398.671 35.1758 398.671 44.2758V74.0025H388.801V2.21362H398.661V31.0303Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M487.39 75.2156C467.29 75.2156 454.59 59.6444 454.59 38.1078C454.59 16.5711 467.89 1 488.79 1C505.69 1 515.99 11.2122 518.99 24.2556H507.89C505.69 16.2678 498.99 10.5044 488.79 10.5044C474.09 10.5044 465.79 22.3344 465.79 38.1078C465.79 53.8811 474.09 65.7111 488.89 65.7111C500.99 65.7111 508.19 57.5211 508.39 46.9044V44.4778H486.99V35.58H519.09V74.0022H509.59V62.2733C506.29 69.9578 498.39 75.2156 487.39 75.2156Z">
-            </path>
-            <path class="d"
-              d="M487.39 75.2156C467.29 75.2156 454.59 59.6444 454.59 38.1078C454.59 16.5711 467.89 1 488.79 1C505.69 1 515.99 11.2122 518.99 24.2556H507.89C505.69 16.2678 498.99 10.5044 488.79 10.5044C474.09 10.5044 465.79 22.3344 465.79 38.1078C465.79 53.8811 474.09 65.7111 488.89 65.7111C500.99 65.7111 508.19 57.5211 508.39 46.9044V44.4778H486.99V35.58H519.09V74.0022H509.59V62.2733C506.29 69.9578 498.39 75.2156 487.39 75.2156Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M547.719 75.2155C533.519 75.2155 525.02 68.6433 524.02 57.3188H534.219C535.019 65.0033 540.619 67.8344 547.719 67.8344C554.819 67.8344 558.219 63.9922 558.219 59.6444C558.219 54.3866 554.619 53.0722 545.719 50.8477C535.119 48.2188 525.82 45.8933 525.82 35.6811C525.82 27.1877 533.919 21.2222 546.419 21.2222C558.919 21.2222 566.52 27.8955 567.82 36.8944H557.719C557.019 31.5355 552.92 28.5022 546.32 28.5022C539.72 28.5022 536.02 31.5355 536.02 35.0744C536.02 39.8266 540.92 40.9388 549.02 42.9611C559.92 45.5899 568.62 48.3199 568.62 58.9366C568.62 69.5533 560.219 75.2155 547.719 75.2155Z">
-            </path>
-            <path class="d"
-              d="M547.719 75.2155C533.519 75.2155 525.02 68.6433 524.02 57.3188H534.219C535.019 65.0033 540.619 67.8344 547.719 67.8344C554.819 67.8344 558.219 63.9922 558.219 59.6444C558.219 54.3866 554.619 53.0722 545.719 50.8477C535.119 48.2188 525.82 45.8933 525.82 35.6811C525.82 27.1877 533.919 21.2222 546.419 21.2222C558.919 21.2222 566.52 27.8955 567.82 36.8944H557.719C557.019 31.5355 552.92 28.5022 546.32 28.5022C539.72 28.5022 536.02 31.5355 536.02 35.0744C536.02 39.8266 540.92 40.9388 549.02 42.9611C559.92 45.5899 568.62 48.3199 568.62 58.9366C568.62 69.5533 560.219 75.2155 547.719 75.2155Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M588.731 75.2157C578.831 75.2157 571.031 69.5535 571.031 59.4423C571.031 49.3312 578.931 46.0957 591.431 42.759C599.431 40.5346 604.831 39.5235 604.831 35.2768C604.831 31.5357 601.231 28.7046 594.431 28.7046C587.631 28.7046 583.131 31.6368 582.531 37.5012H572.531C573.831 28.3001 581.431 21.4246 594.531 21.4246C607.631 21.4246 614.931 27.0868 614.931 37.4001V74.0023H605.431V64.8012C603.631 70.4635 598.331 75.2157 588.731 75.2157ZM591.531 67.9357C600.231 67.9357 605.231 60.3523 605.231 51.7579V42.1523C604.031 45.0846 600.431 46.7023 594.531 48.4212C586.631 50.6457 581.431 52.9712 581.431 59.139C581.431 64.8012 585.731 67.9357 591.531 67.9357Z">
-            </path>
-            <path class="d"
-              d="M588.731 75.2157C578.831 75.2157 571.031 69.5535 571.031 59.4423C571.031 49.3312 578.931 46.0957 591.431 42.759C599.431 40.5346 604.831 39.5235 604.831 35.2768C604.831 31.5357 601.231 28.7046 594.431 28.7046C587.631 28.7046 583.131 31.6368 582.531 37.5012H572.531C573.831 28.3001 581.431 21.4246 594.531 21.4246C607.631 21.4246 614.931 27.0868 614.931 37.4001V74.0023H605.431V64.8012C603.631 70.4635 598.331 75.2157 588.731 75.2157ZM591.531 67.9357C600.231 67.9357 605.231 60.3523 605.231 51.7579V42.1523C604.031 45.0846 600.431 46.7023 594.531 48.4212C586.631 50.6457 581.431 52.9712 581.431 59.139C581.431 64.8012 585.731 67.9357 591.531 67.9357Z">
-            </path>
-          </g>
-          <g class="l">
-            <path
-              d="M623.078 22.4357H632.978V30.7268C636.178 24.9635 641.578 21.4246 649.078 21.4246C662.178 21.4246 670.678 32.6479 670.678 48.3201C670.678 63.9923 662.178 75.2157 649.078 75.2157C641.578 75.2157 636.178 71.6768 632.978 65.9135V91.1912H623.078V22.4357ZM646.378 67.329C655.178 67.329 660.078 59.4423 660.078 48.3201C660.078 37.1979 655.178 29.3112 646.378 29.3112C637.578 29.3112 632.778 37.1979 632.778 48.3201C632.778 59.4423 637.678 67.329 646.378 67.329Z">
-            </path>
-            <path class="d"
-              d="M623.078 22.4357H632.978V30.7268C636.178 24.9635 641.578 21.4246 649.078 21.4246C662.178 21.4246 670.678 32.6479 670.678 48.3201C670.678 63.9923 662.178 75.2157 649.078 75.2157C641.578 75.2157 636.178 71.6768 632.978 65.9135V91.1912H623.078V22.4357ZM646.378 67.329C655.178 67.329 660.078 59.4423 660.078 48.3201C660.078 37.1979 655.178 29.3112 646.378 29.3112C637.578 29.3112 632.778 37.1979 632.778 48.3201C632.778 59.4423 637.678 67.329 646.378 67.329Z">
-            </path>
-          </g>
-        </g>
-        </svg>
-      </div>
-      <div class="right f">
-        <p>Haven't booked your tickets yet ?</p><a href="https://madewithgsap.com/effects"
-          class="btn-join btn-join-brd"><img class="stag st1 ico-enter"
-            src="https://madewithgsap.com/assets/img/enter.svg" alt="">
-          <span><span class="stag st2">REGISTER</span> <span class="stag st3">NOW</span></span></a>
-      </div>
-    </section>
-    <section class="l-showreel">
-      <div class="l-frame">
-        <video muted playsinline autoplay="" loop="" src="./videos/Thanima Cover.webm">
-        </video>
-      </div>
-    </section>
-    <section class="l-motion">
-      <p class="p-med">
-        <span class="word"><span>“Festivals</span></span> <span class="word"><span>promote</span></span> <span
-          class="word"><span>diversity,</span></span> <span class="word"><span>they</span></span> <span
-          class="word"><span>bring</span></span> <span class="word"><span>neighbours</span></span> <span
-          class="word"><span>into</span></span> <span class="word"><span>dialogue,</span></span> <span
-          class="word"><span>they</span></span> <span class="word"><span>increase</span></span> <span
-          class="word"><span>creativity,</span></span> <span class="word"><span>they</span></span> <span
-          class="word"><span>offer</span></span> <span class="word"><span>opportunities</span></span> <span
-          class="word"><span>for</span></span> <span class="word"><span>civic</span></span> <span
-          class="word"><span>pride,</span></span> <span class="word"><span>they</span></span> <span
-          class="word"><span>improve</span></span> <span class="word"><span>our</span></span> <span
-          class="word"><span>general</span></span> <span class="word"><span>psychological</span></span> <span
-          class="word"><span>well-being.</span></span> <span class="word"><span>In</span></span> <span
-          class="word"><span>short,</span></span> <span class="word"><span>they</span></span> <span
-          class="word"><span>make</span></span> <span class="word"><span>cities</span></span> <span
-          class="word"><span>better</span></span> <span class="word"><span>places</span></span> <span
-          class="word"><span>to</span></span> <span class="word"><span>live.”</span></span> <span
-          class="word"><span>–</span></span> <span class="word"><span>David</span></span> <span
-          class="word"><span>Binder</span></span>
-        <br><br>
-        <span class="word"><span>The</span></span> <span class="word"><span>Onam</span></span> <span
-          class="word"><span>celebrations,</span></span> <span class="word"><span>here</span></span> <span
-          class="word"><span>at</span></span> <span class="word"><span>VIT,</span></span> <span
-          class="word"><span>is</span></span> <span class="word"><span>celebrated</span></span> <span
-          class="word"><span>through</span></span> <span class="word"><span>‘Thanima’.</span></span> <span
-          class="word"><span>Thanima</span></span> <span class="word"><span>was</span></span> <span
-          class="word"><span>first</span></span> <span class="word"><span>conducted</span></span> <span
-          class="word"><span>in</span></span> <span class="word"><span>the</span></span> <span
-          class="word"><span>year</span></span> <span class="word"><span>2002</span></span> <span
-          class="word"><span>and</span></span> <span class="word"><span>thus</span></span> <span
-          class="word"><span>was</span></span> <span class="word"><span>set</span></span> <span
-          class="word"><span>into</span></span> <span class="word"><span>motion,</span></span> <span
-          class="word"><span>the</span></span> <span class="word"><span>legacy</span></span> <span
-          class="word"><span>of</span></span> <span class="word"><span>this</span></span> <span
-          class="word"><span>wonderful</span></span> <span class="word"><span>and</span></span> <span
-          class="word"><span>auspicious</span></span> <span class="word"><span>celebration.</span></span> <span
-          class="word"><span>Each</span></span> <span class="word"><span>year</span></span> <span
-          class="word"><span>our</span></span> <span class="word"><span>celebrations</span></span> <span
-          class="word"><span>are</span></span> <span class="word"><span>aggrandized</span></span> <span
-          class="word"><span>by</span></span> <span class="word"><span>the</span></span> <span
-          class="word"><span>presence</span></span> <span class="word"><span>of</span></span> <span
-          class="word"><span>dignified</span></span> <span class="word"><span>personalities</span></span> <span
-          class="word"><span>such</span></span> <span class="word"><span>as</span></span> <span
-          class="word"><span>Vineeth</span></span> <span class="word"><span>Sreenivasan,</span></span> <span
-          class="word"><span>Gopi</span></span> <span class="word"><span>Sundar,</span></span> <span
-          class="word"><span>Swetha</span></span> <span class="word"><span>Menon,</span></span> <span
-          class="word"><span>Shri.</span></span> <span class="word"><span>K.</span></span> <span
-          class="word"><span>B.</span></span> <span class="word"><span>Ganesh</span></span> <span
-          class="word"><span>Kumar,</span></span> <span class="word"><span>Deepak</span></span> <span
-          class="word"><span>Dev,</span></span> <span class="word"><span>Shri.</span></span> <span
-          class="word"><span>G</span></span> <span class="word"><span>Karthikeyan,</span></span> <span
-          class="word"><span>Siddhi</span></span> <span class="word"><span>Mahajankatti,</span></span> <span
-          class="word"><span>Vayalar</span></span> <span class="word"><span>Ravi</span></span> <span
-          class="word"><span>(MP),</span></span> <span class="word"><span>Marina</span></span> <span
-          class="word"><span>Michael</span></span> <span class="word"><span>Kurisingal</span></span> <span
-          class="word"><span>etc.</span></span> <span class="word"><span>The</span></span> <span
-          class="word"><span>Thanima</span></span> <span class="word"><span>festivities</span></span> <span
-          class="word"><span>are</span></span> <span class="word"><span>also</span></span> <span
-          class="word"><span>accompanied</span></span> <span class="word"><span>by</span></span> <span
-          class="word"><span>various</span></span> <span class="word"><span>Sporting</span></span> <span
-          class="word"><span>and</span></span> <span class="word"><span>Cultural</span></span> <span
-          class="word"><span>events</span></span> <span class="word"><span>that</span></span> <span
-          class="word"><span>boost</span></span> <span class="word"><span>up</span></span> <span
-          class="word"><span>morale,</span></span> <span class="word"><span>companionship,</span></span> <span
-          class="word"><span>sportsmanship,</span></span> <span class="word"><span>creativity</span></span> <span
-          class="word"><span>and</span></span> <span class="word"><span>togetherness</span></span> <span
-          class="word"><span>of</span></span> <span class="word"><span>the</span></span> <span
-          class="word"><span>entire</span></span> <span class="word"><span>community.</span></span>
-      </p>
-    </section>
-    <section class="l-learn pr sec-black">
-      <div class="f l-circles"></div>
-      <h2 class="p-title mwg_landing1" aria-label="Learn how to use the coolest JS library"><span class="word">
-          <span class="word">
-            <span class="letter"><span>P</span></span>
-            <span class="letter"><span>r</span></span>
-            <span class="letter"><span>e</span></span>
-            <span class="letter"><span>-</span></span>
-            <span class="letter"><span>T</span></span>
-            <span class="letter"><span>h</span></span>
-            <span class="letter"><span>a</span></span>
-            <span class="letter"><span>n</span></span>
-            <span class="letter"><span>i</span></span>
-            <span class="letter"><span>m</span></span>
-            <span class="letter"><span>a</span></span>
-          </span>
-          <br>
-          <span class="word">
-            <span class="letter"><span>G</span></span>
-            <span class="letter"><span>a</span></span>
-            <span class="letter"><span>m</span></span>
-            <span class="letter"><span>e</span></span>
-            <span class="letter"><span>s</span></span>
-          </span>
-          <span class="word">
-            <span class="letter"><span>&</span></span>
-          </span>
-          <span class="word">
-            <span class="letter"><span>S</span></span>
-            <span class="letter"><span>p</span></span>
-            <span class="letter"><span>o</span></span>
-            <span class="letter"><span>r</span></span>
-            <span class="letter"><span>t</span></span>
-            <span class="letter"><span>s</span></span>
-          </span>
+    <main>
 
-      </h2>
-      <div class="mwg_landing2">
-        <div class="pin">
-          <div class="container">
-            <div class="card f f-space2">
-              <!-- <img src="https://madewithgsap.com/assets/img/card1.svg" alt=""> -->
-              <div class="cardList">
-                <h2 class="sm-title ">Games
-                  </h2>
-                <ul>
-                  <li>Treasure Hunt</li>
-                  <li>Vadam Vali</li>
-                  <li>Lemon & Spoon Race</li>
-                  <li>Musical Chair</li>
-                  <li>Sack Race</li>
-                  <li>Baloon Burst</li>
-                  <li>3 Leg Race</li>
-                  <li>Pookalam</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card f f-space2 f-center">
-              <img class="midCardImg" src="./images/thanima.png" alt="">
-              <div class="cardList">
-                <h2 class="sm-title">30 - 08 - 2025
-                  <br>
-                  Greenos
-                </h2>
-                <p></p>
-              </div>
-            </div>
-            <div class="card f f-space2">
-              <!-- <img src="https://madewithgsap.com/assets/img/card3.svg" alt=""> -->
-              <div class="cardList">
-                <h2 class="sm-title">Sports</h2>
-                <ul>
-                  <li>Footbal</li>
-                  <li>Badminton</li>
-                  <li>Volleyball</li>
-                  <li>Basketball</li>
-                  <li>Throwball</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mwg_landing3">
-        <ul class="f f-center">
-          <li class="pr"><span class="letter pa li">
-            </span> <span><span class="letter pr"><span>G</span><span class="pa">G</span></span><span
-                class="letter pr"><span>u</span><span class="pa">u</span></span><span
-                class="letter pr"><span>e</span><span class="pa">e</span></span><span
-                class="letter pr"><span>s</span><span class="pa">s</span></span><span
-                class="letter pr"><span>s</span><span class="pa">s</span></span></span>
-          </li>
-          <li class="pr"><span class="letter pa li">
-            </span> <span><span class="letter pr t"><span>T</span><span class="pa">T</span></span><span
-                class="letter pr"><span>h</span><span class="pa">h</span></span><span
-                class="letter pr"><span>e</span><span class="pa">e</span></span></span>
-          </li>
-          <li class="pr"><span class="letter pa li"></span> <span class="letter pa lt">
-            </span> <span><span class="letter pr"><span>A</span><span class="pa">A</span></span><span
-                class="letter pr"><span>r</span><span class="pa">r</span></span><span
-                class="letter pr"><span>t</span><span class="pa">t</span></span><span
-                class="letter pr"><span>i</span><span class="pa">i</span></span><span
-                class="letter pr"><span>s</span><span class="pa">s</span></span><span
-                class="letter pr"><span>t</span><span class="pa">t</span></span><span
-                class="letter pr"><span>..</span><span class="pa">..</span></span></span>
-          </li>
-        </ul>
 
-        <div class="bottom f f-space mono">
-
-        </div>
-      </div>
-    </section>
-   
-    <div class="sec-white">
-      <section class="l-sentence">
-        <section class="mwg_landing4">
-          <div class="pin">
+        <!-- <header class="site-header">
             <div class="container">
-              <div class="bottom f p-tiny">
-              </div>
-              <p class="text">So,<br>
-                ready to celebrate?</p>
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <strong class="text-dark">Welcome to Thanima 2024</strong>
+                        </p>
+                    </div>
+
+                </div>
             </div>
-          </div>
+        </header> -->
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#section_1">
+                    <img class="navThanimaImg" src="./images/thanima.png" alt="">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Artists</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Pre Thanima</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_6">Team</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_7">Sponsors</a>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+
+                    <div class="col-12 pt-5 thanima_main_icon d-flex justify-content-center">
+
+                        <img src="./images/thanima-cropped.svg" alt="">
+
+
+                    </div>
+
+                    <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
+
+
+                        <div class="location-wrap mx-auto py-3 px-5 py-lg-0">
+                            <h5 class="text-white">
+                                <i class="custom-icon bi-clock me-2"></i>
+                                8<sup>th</sup>, September 2024
+                            </h5>
+                        </div>
+                        <div class="location-wrap mx-auto py-3 px-5 py-lg-0">
+                            <h5 class="text-white">
+                                <i class="custom-icon bi-geo-alt me-2"></i>
+                                Anna Auditorium
+                            </h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <video autoplay="autoplay" muted loop="true" playsinline class="custom-video" poster="">
+                    <source src="video/Thanima Cover.webm" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
-      </section>
-    </div>
-    <section class="sec-black sec-black-clip pr">
-      <div class="f l-circles"></div>
-      <div class="global-sent container-hid">
-        <div class="container p-title">
 
-          <div class="sentence sentence2">
-            <p class="f f-center"><span>Get ready to animate</span>
-              <img src="https://madewithgsap.com/assets/img/plusy.svg" alt="">
-              <span>Get ready to animate</span> <img src="https://madewithgsap.com/assets/img/plusy.svg" alt="">
-              <span>Get ready to animate</span> <img src="https://madewithgsap.com/assets/img/plusy.svg" alt="">
-              <span>Get ready to animate</span> <img src="https://madewithgsap.com/assets/img/plusy.svg" alt="">
-            </p>
-          </div>
+        <div class="infinite_slide">
+            <div class="infi-slide">
+                <!-- <p>THANIMA 2024</p> &nbsp; -->
+                <img src="./images/thanima.png" alt="">
+                <img src="./images/vit_logo.png" alt="">
+                <!-- <p>THANIMA 2024</p> &nbsp; -->
+                <img src="./images/thanima.png" alt="">
+                <img src="./images/vit_logo.png" alt="">
+                <!-- <p>THANIMA 2024</p> &nbsp; -->
+                <img src="./images/thanima.png" alt="">
+                <img src="./images/vit_logo.png" alt="">
+                <!-- <p>THANIMA 2024</p> &nbsp; -->
+                <img src="./images/thanima.png" alt="">
+                <img src="./images/vit_logo.png" alt="">
+                <!-- <p>THANIMA 2024</p> &nbsp; -->
+                <img src="./images/thanima.png" alt="">
+                <img src="./images/vit_logo.png" alt="">
+                <!-- <p>THANIMA 2024</p> &nbsp; -->
+                <img src="./images/thanima.png" alt="">
+                <img src="./images/vit_logo.png" alt="">
+                <!-- <p>THANIMA 2024</p> &nbsp; -->
+                <img src="./images/thanima.png" alt="">
+                <img src="./images/vit_logo.png" alt="">
+                <!-- <p>THANIMA 2024</p> &nbsp; -->
+                <img src="./images/thanima.png" alt="">
+                <img src="./images/vit_logo.png" alt="">
+            </div>
         </div>
-        <div class="space"></div>
-      </div>
-    </section>
-    <footer class="f f-space pr">
-      <div class="col1">
-       
-      <div class="col2 mono">
-        <h2>
-          <!-- Social -->
-        </h2>
-        <ul>
-          <li>
-            <a href="https://x.com/madewithgsap" target="_blank" rel="noreferrer"><span>
-              <!-- X(Twitter) -->
-            </span></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/madewithgsap" target="_blank" rel="noreferrer"><span>
-              <!-- Instagram -->
-            </span></a>
-          </li>
-          <li>
-            <a href="https://bsky.app/profile/madewithgsap.bsky.social" target="_blank"
-              rel="noreferrer"><span>
-                <!-- Bluesky -->
-              </span></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/madewithgsap/" target="_blank"
-              rel="noreferrer"><span>
-                <!-- Linkedin -->
-              </span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col2 mono">
-        <h2>
-          <!-- Pages -->
-        </h2>
-        <ul>
-          <li>
-            <a href="https://madewithgsap.com/"><span>
-              <!-- Home -->
-            </span></a>
-          </li>
-          <li>
-            <a href="https://madewithgsap.com/effects"><span>
-              <!-- Collection -->
-            </span></a>
-          </li>
-          <li>
-            <a href="https://madewithgsap.com/faq"><span>
-              <!-- FAQ -->
-            </span></a>
-          </li>
-          <li>
-            <a href="https://madewithgsap.com/get-started"><span>
-              <!-- Pricing -->
-            </span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col2 col2last mono">
-        <!-- <h2>Contact</h2> -->
-        <ul>
-          <li>
-            <a class="prevent" href="mailto:contact@madewithgsap.com"><span>
-              <!-- Reach us -->
-              </span></a>
-          </li>
-        </ul>
-      </div>
-    
-      <div class="col3 mono f">
-        <ul class="f CopyrightTxt">
-          <li>© Copyright 2025 Thanima Team</li>
+        <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
 
-        </ul>
-      </div>
+                    <div class="col-lg-12 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info">
+                            <h2 class="text-white mb-4">About Thanima</h2>
+
+                            <p class="text-white">
+                                “Festivals promote diversity, they bring neighbours into dialogue,
+                                they increase creativity, they offer opportunities for civic pride,
+                                they improve our general psychological well-being. In short, they make
+                                cities better places to live.” – David Binder<br /><br />
+                                The Onam celebrations, here at VIT, is celebrated through ‘Thanima’.
+                                Thanima was first conducted in the year 2002 and thus was set into
+                                motion, the legacy of this wonderful and auspicious celebration. Each
+                                year our celebrations are aggrandized by the presence of dignified
+                                personalities such as Vineeth Sreenivasan, Gopi Sundar, Swetha Menon, Shri. K. B.
+                                Ganesh Kumar, Deepak Dev, Shri. G Karthikeyan, Siddhi Mahajankatti,
+                                Vayalar Ravi (MP), Marina Michael Kurisingal etc. The Thanima
+                                festivities are also accompanied by various Sporting and Cultural
+                                events that boost up morale, companionship, sportsmanship, creativity
+                                and togetherness of the entire community.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="artists-section section-padding" id="section_3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info">
+                            <h2 class="text-black text-center mb-4">Sachin Warrier</h2>
+
+                            <p class="text-black text-center" style="font-weight: 500; font-size: 1.2rem; padding: 0 2vw;">
+                                Sachin Warrier is an Indian playback singer and composer in the Malayalam
+                                film industry from Kerala. He became notable
+                                with the song "Muthuchippi Poloru" from the film Thattathin Marayathu. He made his debut
+                                with the movie Malarvaadi Arts
+                                Club. His hits include Maangalyam, Muthuchippi, Vaathil Melle, En Kanimalare and many more..
+                                Known for blending traditional and contemporary styles, Sachin's music resonates with a wide audience. We are excited to
+                                welcome him to Thanima 2024 for a captivating musical performance that celebrates the cultural heritage of Kerala.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="about-text-wrap">
+                            <img src="images/artists/sachin warrier.jpeg" class="about-image img-fluid">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="schedule-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <h2 class="text-white mb-4">Pre Thanima</h1>
+
+                            <div class="preThanimaBox">
+                                <div><img src="./images/pre_thanima_1.png" alt=""></div>
+                                <div><img src="./images/pre_thanima_2.jpg" alt=""></div>
+                                <div><img src="./images/pre_thanima_3.png" alt=""></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artists-section section-padding" id="section_5">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Gallery</h1>
+                    </div>
+                    <div class="galleryImageBox">
+                        <img src="./images/gallery/t10.webp" alt="">
+                        <img src="./images/gallery/t9.webp" alt="">
+                        <img src="./images/gallery/t8.webp" alt="">
+                        <img src="./images/gallery/t7.webp" alt="">
+                        <img src="./images/gallery/t6.webp" alt="">
+                        <img src="./images/gallery/t5.webp" alt="">
+                        <img src="./images/gallery/t4.webp" alt="">
+                        <img src="./images/gallery/t15.webp" alt="">
+                        <img src="./images/gallery/t14.webp" alt="">
+                        <img src="./images/gallery/t13.webp" alt="">
+                        <img src="./images/gallery/t12.webp" alt="">
+                        <img src="./images/gallery/t11.webp" alt="">
+                        <img src="./images/gallery/t3.webp" alt="">
+                        <img src="./images/gallery/t2.webp" alt="">
+                        <img src="./images/gallery/t1.webp" alt="">
+                    </div>
+                    <div class="gallery_slide">
+                        <div class="gallery-slide">
+                            <img src="./images/gallery/t10.webp" alt="">
+                            <img src="./images/gallery/t9.webp" alt="">
+                            <img src="./images/gallery/t8.webp" alt="">
+                            <img src="./images/gallery/t7.webp" alt="">
+                            <img src="./images/gallery/t6.webp" alt="">
+                            <img src="./images/gallery/t5.webp" alt="">
+                            <img src="./images/gallery/t4.webp" alt="">
+                            <img src="./images/gallery/t15.webp" alt="">
+                            <img src="./images/gallery/t14.webp" alt="">
+                            <img src="./images/gallery/t13.webp" alt="">
+                            <img src="./images/gallery/t12.webp" alt="">
+                            <img src="./images/gallery/t11.webp" alt="">
+                            <img src="./images/gallery/t3.webp" alt="">
+                            <img src="./images/gallery/t2.webp" alt="">
+                            <img src="./images/gallery/t1.webp" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="artists-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 text-center">
+                        <h2 style="color: #ee5007;" class="mb-4">Meet The Team</h1>
+                    </div>
+
+                    <div class="teamBox">
+                        <div>
+                            <div>
+                                <img class="teamMember" src="./images/viswanathan.jpeg" alt="">
+                                <p>Dr. G.Viswanathan</p>
+                            </div>
+                            <div>
+                                <img class="teamMember" src="./images/selvam.jpg" alt="">
+                                <p>Dr. G V Selvam</p>
+                            </div>
+                            <div>
+                                <img class="teamMember" src="./images/sankar.jpg" alt="">
+                                <p>Mr. Sankar Viswanathan</p>
+                            </div>
+                            <div>
+                                <img class="teamMember" src="./images/sekar.jpg" alt="">
+                                <p>Dr. Sekar Viswanathan</p>
+                            </div>
+                            <div>
+                                <img class="teamMember" src="./images/naiju.jpeg" alt="">
+                                <p>Dr. C.D. Naiju</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="studentCo mt-4 pt-4">
+                        <h3>Student Co-ordinators</h3>
+                        <div class="studentList">
+                            <div>
+                                <h5>Main</h5>
+                                <ul>
+                                    <li>Abhiraman V J</li>
+                                    <li>Parvathi Sajeev
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Cultural</h5>
+                                <ul>
+                                    <li>Meenakshi Pramod</li>
+                                    <li>Ashitha K</li>
+                                    <li>Varghese Matha Kurian</li>
+                                    <li>Devanand</li>
+
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Documentation</h5>
+                                <ul>
+                                    <li>Pranav K S</li>
+                                    <li>Vani Suresh</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Finance</h5>
+                                <ul>
+                                    <li>Sreeram R</li>
+                                    <li>Aneeta Anil</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Guest Care</h5>
+                                <ul>
+                                    <li>Shiker Menon
+                                    </li>
+                                    <li>Saveri Sreeram
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Publicity</h5>
+                                <ul>
+                                    <li>Anupam Sudhir
+
+                                    </li>
+                                    <li>Lavanya Shylesh
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Registration</h5>
+                                <ul>
+                                    <li>Anikeith Alexander
+                                    </li>
+                                    <li>Jyothika
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Sponsorship</h5>
+                                <ul>
+                                    <li>Abhinand Raju
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Sports & Games</h5>
+                                <ul>
+                                    <li>Manhar V A
+
+
+                                    </li>
+                                    <li>Anupama
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Technical</h5>
+                                <ul>
+                                    <li>Safa Aboobacker
+                                    </li>
+                                    <li>Abhiram Aravind</li>
+                                    <li>Rohan Jacob</li>
+                                    <li>Naveen George Joseph</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Food & Refreshments</h5>
+                                <ul>
+                                    <li>Mohammad Sajad
+                                    </li>
+                                    <li>Abel Joseph
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Design</h5>
+                                <ul>
+                                    <li>Gawrishankar
+                                    </li>
+                                    <li>Surya Rajeev
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="artists-section section-padding" id="section_7">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Sponsors</h1>
+                    </div>
+
+                    <div class="sponsorBox">
+                        <div>
+                            <img class="sponsor" src="./images/sponsors/amcos.png" alt="">
+                            <img class="bigSponsor" src="./images/sponsors/canApprove.png" alt="">
+                            <img class="sponsor" src="./images/sponsors/malabar.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+
+
+
+
+    </main>
+
+
+    <footer class="site-footer text-center">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="padding-bottom: 40px;">
+            <div class="row">
+
+                <div class="col-lg-3 col-12 mb-4 text-center pb-2">
+                    <h5 class="site-footer-title mb-3">Links &nbsp;&nbsp;</h5>
+
+                    <ul class="site-footer-links">
+
+                        <li class="social-icon-item">
+                            <a href="https://www.instagram.com/thanima_vit/?hl=en" class="social-icon-link">
+                                <span class="bi-instagram"></span>
+                            </a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="https://www.youtube.com/channel/UCMUOmxtPVAj8_anete0oJaA" class="social-icon-link">
+                                <span class="bi-youtube"></span>
+                            </a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="https://www.facebook.com/vit.thanima/photos/?_rdr" class="social-icon-link">
+                                <span class="bi-facebook"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="footer_box col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 090-080-0760" class="site-footer-link">
+
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:hello@company.com" class="site-footer-link">
+                            vitthanima@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="footer_box text-center col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-2">Location</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        Anna Auditorium, <br> VIT Vellore, Tamil Nadu</p>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-12 vit_logo_box">
+                    <img src="./images/vit_logo.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="developerSection">
+            Designed and Developed by:
+            <br>
+            <a href="https://www.instagram.com/naveengjoseph?igsh=a2lyMnRtZmk1cGd6">Naveen George Joseph</a>
+        </div>
+
+        <div class="copyright">
+            &copy Copyright 2024 Thanima Team
+        </div>
+
     </footer>
-    
-    <div class="rule12" aria-hidden="true"></div>
-    <div class="rule3" aria-hidden="true"></div>
-  </main>
-  <script src="https://madewithgsap.com/assets/landing/gsap.js"></script>
-  <script src="https://madewithgsap.com/assets/landing/scrolltrigger.js"></script>
 
-  <script src="https://madewithgsap.com/assets/landing/customease.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Thanima 2024",
+        "url": "thanima.vit.ac.in"
+    }
+    </script>
+    <script>
+        window.addEventListener("load", (event) => {
+            setTimeout(() => {
+                document.getElementById("loading").style.display = "none";
+            }, 100);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.querySelector('.custom-video');
+            if (video) {
+                video.play().catch(error => {
+                    console.log('Autoplay prevented on iOS: ', error);
+                });
+            }
+        });
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
 
-  <script src="https://madewithgsap.com/assets/landing/lenis.js"></script>
-  <script src="https://madewithgsap.com/assets/tutorial/prism.js"></script>
-  <script src="https://madewithgsap.com/assets/landing/InertiaPlugin.min.js"></script>
-
-  <script src="https://madewithgsap.com/assets/landing/app2.js"></script>
 </body>
 
 </html>
