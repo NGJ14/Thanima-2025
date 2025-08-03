@@ -37,6 +37,18 @@
         }
       </script> 
 
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.animated-navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
 </head>
 
 <body>
@@ -65,41 +77,41 @@
         </header> -->
 
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg animated-navbar">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="#section_1">
-                    <img class="navThanimaImg" src="./images/thanima.png" alt="">
+                <a href="#section_1" class="nav-logo-link">
+                    <img class="navThanimaImg animated-logo" src="./images/thanima.png" alt="">
                 </a>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            <a class="nav-link click-scroll animated-nav-item" href="#section_1">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                            <a class="nav-link click-scroll animated-nav-item" href="#section_2">About</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Artists</a>
+                            <a class="nav-link click-scroll animated-nav-item" href="#section_3">Artists</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Pre Thanima</a>
+                            <a class="nav-link click-scroll animated-nav-item" href="#section_4">Pre Thanima</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Gallery</a>
+                            <a class="nav-link click-scroll animated-nav-item" href="#section_5">Gallery</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_6">Team</a>
+                            <a class="nav-link click-scroll animated-nav-item" href="#section_6">Team</a>
                         </li>
 
                         <!-- <li class="nav-item">
@@ -120,28 +132,22 @@
                 <div class="row">
 
                     <div class="col-12 pt-5 thanima_main_icon d-flex justify-content-center">
-
-                        <img src="./images/thanima-cropped.svg" alt="">
-
-
+                        <img src="./images/thanima-cropped.svg" alt="" class="main-logo animated-main-logo">
                     </div>
 
                     <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
-
-
-                        <div class="location-wrap mx-auto py-3 px-5 py-lg-0">
+                        <div class="location-wrap mx-auto py-3 px-5 py-lg-0 animated-info">
                             <h5 class="text-white">
                                 <i class="custom-icon bi-clock me-2"></i>
                                 8<sup>th</sup>, September 2025
                             </h5>
                         </div>
-                        <div class="location-wrap mx-auto py-3 px-5 py-lg-0">
+                        <div class="location-wrap mx-auto py-3 px-5 py-lg-0 animated-info">
                             <h5 class="text-white">
                                 <i class="custom-icon bi-geo-alt me-2"></i>
                                 Anna Auditorium
                             </h5>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -149,7 +155,6 @@
             <div class="video-wrap">
                 <video autoplay="autoplay" muted loop="true" playsinline class="custom-video" poster="">
                     <source src="video/Thanima Cover.webm" type="video/mp4">
-
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -267,51 +272,147 @@
             </div>
         </section>
 
-        <section class=" section-padding" id="section_5">
+        <section class="photo-collage-gallery section-padding" id="section_5">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-
                     <div class="col-12 text-center">
-                        <h2 class="mb-4">Gallery</h1>
+                        <h2 class="mb-4">Gallery</h2>
                     </div>
-                    <div class="galleryImageBox">
-                        <img src="./images/gallery/t10.webp" alt="">
-                        <img src="./images/gallery/t9.webp" alt="">
-                        <img src="./images/gallery/t8.webp" alt="">
-                        <img src="./images/gallery/t7.webp" alt="">
-                        <img src="./images/gallery/t6.webp" alt="">
-                        <img src="./images/gallery/t5.webp" alt="">
-                        <img src="./images/gallery/t4.webp" alt="">
-                        <img src="./images/gallery/t15.webp" alt="">
-                        <img src="./images/gallery/t14.webp" alt="">
-                        <img src="./images/gallery/t13.webp" alt="">
-                        <img src="./images/gallery/t12.webp" alt="">
-                        <img src="./images/gallery/t11.webp" alt="">
-                        <img src="./images/gallery/t3.webp" alt="">
-                        <img src="./images/gallery/t2.webp" alt="">
-                        <img src="./images/gallery/t1.webp" alt="">
-                    </div>
-                    <div class="gallery_slide">
-                        <div class="gallery-slide">
-                            <img src="./images/gallery/t10.webp" alt="">
-                            <img src="./images/gallery/t9.webp" alt="">
-                            <img src="./images/gallery/t8.webp" alt="">
-                            <img src="./images/gallery/t7.webp" alt="">
-                            <img src="./images/gallery/t6.webp" alt="">
-                            <img src="./images/gallery/t5.webp" alt="">
-                            <img src="./images/gallery/t4.webp" alt="">
-                            <img src="./images/gallery/t15.webp" alt="">
-                            <img src="./images/gallery/t14.webp" alt="">
-                            <img src="./images/gallery/t13.webp" alt="">
-                            <img src="./images/gallery/t12.webp" alt="">
-                            <img src="./images/gallery/t11.webp" alt="">
-                            <img src="./images/gallery/t3.webp" alt="">
-                            <img src="./images/gallery/t2.webp" alt="">
-                            <img src="./images/gallery/t1.webp" alt="">
+                </div>
+                
+                <!-- Row 1: Mix of wide panoramic and square images -->
+                <div class="gallery-row row-1">
+                    <div class="gallery-track">
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t1.webp" alt="Thanima 2025">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t2.webp" alt="Cultural Celebration">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t3.webp" alt="Student Life">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t4.webp" alt="Academic Excellence">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t5.webp" alt="Innovation Hub">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t6.webp" alt="Research & Development">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t7.webp" alt="Global Connections">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t8.webp" alt="Sports Excellence">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t9.webp" alt="Creative Arts">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t10.webp" alt="Leadership Summit">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t11.webp" alt="Innovation Lab">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t12.webp" alt="Campus Life">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t13.webp" alt="Academic Success">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t14.webp" alt="Cultural Diversity">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t15.webp" alt="Research Excellence">
                         </div>
                     </div>
+                </div>
 
+                <!-- Row 2: Combination of portrait and landscape orientations -->
+                <div class="gallery-row row-2">
+                    <div class="gallery-track">
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t1.webp" alt="Student Innovation">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t2.webp" alt="Academic Excellence">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t3.webp" alt="Research Breakthrough">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t4.webp" alt="Global Partnerships">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t5.webp" alt="Sports Champions">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t6.webp" alt="Creative Expression">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t7.webp" alt="Leadership Development">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t8.webp" alt="Technology Hub">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t9.webp" alt="Campus Community">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t10.webp" alt="Learning Excellence">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t11.webp" alt="Cultural Heritage">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t12.webp" alt="Scientific Discovery">
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Row 3: Mixed rectangular and square images -->
+                <div class="gallery-row row-3">
+                    <div class="gallery-track">
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t13.webp" alt="Innovation Center">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t14.webp" alt="Academic Success">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t15.webp" alt="Research Excellence">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t1.webp" alt="Global Network">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t2.webp" alt="Sports Excellence">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t3.webp" alt="Artistic Expression">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t4.webp" alt="Leadership Excellence">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t5.webp" alt="Technology Innovation">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t6.webp" alt="Student Community">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t7.webp" alt="Learning Journey">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t8.webp" alt="Cultural Celebration">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery/t9.webp" alt="Scientific Research">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -321,30 +422,74 @@
                 <div class="row justify-content-center">
 
                     <div class="col-12 text-center">
-                        <h2 style="color: #ee5007;" class="mb-4">Meet The Team</h1>
+                        <h2 style="color: #ee5007;" class="mb-4">Meet The Team</h2>
                     </div>
 
-                    <div class="teamBox">
-                        <div>
-                            <div>
-                                <img class="teamMember" src="./images/viswanathan.jpeg" alt="">
-                                <p>Dr. G.Viswanathan</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                            <div class="team-card">
+                                <div class="team-card-image">
+                                    <img src="./images/viswanathan.jpeg" alt="Dr. G.Viswanathan">
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="team-member-name">Dr. G.Viswanathan</h3>
+                                    <p class="team-member-role">Chancellor</p>
+                                    <p class="team-member-details">Founder & Chancellor of VIT University</p>
+                                </div>
                             </div>
-                            <div>
-                                <img class="teamMember" src="./images/selvam.jpg" alt="">
-                                <p>Dr. G V Selvam</p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                            <div class="team-card">
+                                <div class="team-card-image">
+                                    <img src="./images/selvam.jpg" alt="Dr. G V Selvam">
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="team-member-name">Dr. G V Selvam</h3>
+                                    <p class="team-member-role">Vice-Chairman</p>
+                                    <p class="team-member-details">Vice-Chairman of Vellore Engineering College</p>
+                                </div>
                             </div>
-                            <div>
-                                <img class="teamMember" src="./images/sankar.jpg" alt="">
-                                <p>Mr. Sankar Viswanathan</p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                            <div class="team-card">
+                                <div class="team-card-image">
+                                    <img src="./images/sankar.jpg" alt="Mr. Sankar Viswanathan">
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="team-member-name">Mr. Sankar Viswanathan</h3>
+                                    <p class="team-member-role">Vice - President</p>
+                                    <p class="team-member-details">Vice-President of Vellore Engineering College</p>
+                                </div>
                             </div>
-                            <div>
-                                <img class="teamMember" src="./images/sekar.jpg" alt="">
-                                <p>Dr. Sekar Viswanathan</p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                            <div class="team-card">
+                                <div class="team-card-image">
+                                    <img src="./images/sekar.jpg" alt="Dr. Sekar Viswanathan">
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="team-member-name">Dr. Sekar Viswanathan</h3>
+                                    <p class="team-member-role">Vice President at VIT
+                                    </p>
+                                    <p class="team-member-details">Vice-President of Vellore Engineering College</p>
+                                </div>
                             </div>
-                            <div>
-                                <img class="teamMember" src="./images/naiju.jpeg" alt="">
-                                <p>Dr. C.D. Naiju</p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                            <div class="team-card">
+                                <div class="team-card-image">
+                                    <img src="./images/naiju.jpeg" alt="Dr. C.D. Naiju">
+                                </div>
+                                <div class="team-card-content">
+                                    <h3 class="team-member-name">Dr. C.D. Naiju</h3>
+                                    <p class="team-member-role">Director</p>
+                                    <p class="team-member-details">
+                                        Director Students' Welfar Ofiice</p>
+                                </div>
                             </div>
                         </div>
                     </div>
