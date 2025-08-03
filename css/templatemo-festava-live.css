@@ -2134,58 +2134,58 @@ img:nth-child(15) {
 /* Responsive Design for Mobile Team Cards */
 @media screen and (max-width: 768px) {
   .team-card {
-    padding: 0.5rem;
-    height: auto;
-    min-height: 250px;
-  }
-  
-  .team-card-image {
-    margin-bottom: 0.5rem;
-    aspect-ratio: 1;
-    max-height: 120px;
-  }
-  
-  .team-member-name {
-    font-size: 0.8rem;
-    margin-bottom: 0.2rem;
-  }
-  
-  .team-member-role {
-    font-size: 0.65rem;
-    margin-bottom: 0.3rem;
-  }
-  
-  .team-member-details {
-    font-size: 0.55rem;
-    line-height: 1.2;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .team-card {
     padding: 0.4rem;
     height: auto;
-    min-height: 220px;
+    min-height: 180px;
   }
   
   .team-card-image {
     margin-bottom: 0.4rem;
     aspect-ratio: 1;
-    max-height: 100px;
+    max-height: 60px;
   }
   
   .team-member-name {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     margin-bottom: 0.15rem;
   }
   
   .team-member-role {
     font-size: 0.6rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.2rem;
   }
   
   .team-member-details {
     font-size: 0.5rem;
     line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .team-card {
+    padding: 0.3rem;
+    height: auto;
+    min-height: 160px;
+  }
+  
+  .team-card-image {
+    margin-bottom: 0.3rem;
+    aspect-ratio: 1;
+    max-height: 50px;
+  }
+  
+  .team-member-name {
+    font-size: 0.65rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .team-member-role {
+    font-size: 0.55rem;
+    margin-bottom: 0.15rem;
+  }
+  
+  .team-member-details {
+    font-size: 0.45rem;
+    line-height: 1.0;
   }
 }
