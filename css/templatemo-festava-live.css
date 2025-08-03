@@ -1443,7 +1443,7 @@ strong {
 /* Team Card Mobile Grid Fix */
 @media screen and (max-width: 767px) {
   .team-card {
-    padding: 0.3rem;
+    padding: 0.2rem;
     height: auto;
     min-height: 140px;
     max-width: 90%;
@@ -1451,22 +1451,22 @@ strong {
   }
   
   .team-card-image {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
     aspect-ratio: 1;
     max-height: 40px;
     width: 40px;
-    margin: 0 auto 0.3rem auto;
+    margin: 0 auto 0.2rem auto;
   }
   
   .team-member-name {
     font-size: 0.6rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.08rem;
     text-align: center;
   }
   
   .team-member-role {
     font-size: 0.5rem;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.12rem;
     text-align: center;
   }
   
@@ -1480,6 +1480,8 @@ strong {
   .col-sm-6 {
     width: 50% !important;
     float: left !important;
+    padding: 0 0.25rem !important;
+    margin-bottom: 0.5rem !important;
   }
   
   .row::after {
@@ -1491,7 +1493,7 @@ strong {
 
 @media screen and (max-width: 575px) {
   .team-card {
-    padding: 0.25rem;
+    padding: 0.15rem;
     height: auto;
     min-height: 120px;
     max-width: 85%;
@@ -1499,22 +1501,22 @@ strong {
   }
   
   .team-card-image {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
     aspect-ratio: 1;
     max-height: 35px;
     width: 35px;
-    margin: 0 auto 0.25rem auto;
+    margin: 0 auto 0.15rem auto;
   }
   
   .team-member-name {
     font-size: 0.55rem;
-    margin-bottom: 0.08rem;
+    margin-bottom: 0.06rem;
     text-align: center;
   }
   
   .team-member-role {
     font-size: 0.45rem;
-    margin-bottom: 0.12rem;
+    margin-bottom: 0.1rem;
     text-align: center;
   }
   
@@ -1528,6 +1530,8 @@ strong {
   .col-sm-6 {
     width: 50% !important;
     float: left !important;
+    padding: 0 0.15rem !important;
+    margin-bottom: 0.4rem !important;
   }
 }
 
