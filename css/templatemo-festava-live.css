@@ -1443,36 +1443,37 @@ strong {
 /* Team Card Mobile Grid Fix */
 @media screen and (max-width: 767px) {
   .team-card {
-    padding: 0.2rem;
+    padding: 0.4rem;
     height: auto;
-    min-height: 140px;
-    max-width: 90%;
+    min-height: 160px;
+    max-width: 95%;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   
   .team-card-image {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
     aspect-ratio: 1;
-    max-height: 40px;
-    width: 40px;
-    margin: 0 auto 0.2rem auto;
+    max-height: 50px;
+    width: 50px;
+    margin: 0 auto 0.3rem auto;
   }
   
   .team-member-name {
-    font-size: 0.6rem;
-    margin-bottom: 0.08rem;
+    font-size: 0.7rem;
+    margin-bottom: 0.1rem;
     text-align: center;
   }
   
   .team-member-role {
-    font-size: 0.5rem;
-    margin-bottom: 0.12rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.15rem;
     text-align: center;
   }
   
   .team-member-details {
-    font-size: 0.4rem;
-    line-height: 1.0;
+    font-size: 0.5rem;
+    line-height: 1.1;
     text-align: center;
   }
   
@@ -1480,8 +1481,9 @@ strong {
   .col-sm-6 {
     width: 50% !important;
     float: left !important;
-    padding: 0 0.25rem !important;
+    padding: 0 0.2rem !important;
     margin-bottom: 0.5rem !important;
+    box-sizing: border-box;
   }
   
   .row::after {
@@ -1493,36 +1495,37 @@ strong {
 
 @media screen and (max-width: 575px) {
   .team-card {
-    padding: 0.15rem;
+    padding: 0.35rem;
     height: auto;
-    min-height: 120px;
-    max-width: 85%;
+    min-height: 140px;
+    max-width: 92%;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   
   .team-card-image {
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.25rem;
     aspect-ratio: 1;
-    max-height: 35px;
-    width: 35px;
-    margin: 0 auto 0.15rem auto;
+    max-height: 45px;
+    width: 45px;
+    margin: 0 auto 0.25rem auto;
   }
   
   .team-member-name {
-    font-size: 0.55rem;
-    margin-bottom: 0.06rem;
+    font-size: 0.65rem;
+    margin-bottom: 0.08rem;
     text-align: center;
   }
   
   .team-member-role {
-    font-size: 0.45rem;
-    margin-bottom: 0.1rem;
+    font-size: 0.55rem;
+    margin-bottom: 0.12rem;
     text-align: center;
   }
   
   .team-member-details {
-    font-size: 0.35rem;
-    line-height: 0.9;
+    font-size: 0.45rem;
+    line-height: 1.0;
     text-align: center;
   }
   
@@ -1532,6 +1535,7 @@ strong {
     float: left !important;
     padding: 0 0.15rem !important;
     margin-bottom: 0.4rem !important;
+    box-sizing: border-box;
   }
 }
 
@@ -1780,7 +1784,7 @@ img:nth-child(15) {
 
 /* Gallery Rows */
 .gallery-row {
-  margin: 2rem 0;
+  margin: 8px 0;
   overflow: hidden;
   position: relative;
 }
@@ -1911,7 +1915,7 @@ img:nth-child(15) {
   }
   
   .gallery-row {
-    margin: 1rem 0;
+    margin: 6px 0;
   }
   
   /* Adjust image sizes for mobile */
@@ -2187,6 +2191,279 @@ img:nth-child(15) {
   
   .animated-nav-item {
     animation-delay: 1.2s !important;
+  }
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
+  .hero-section {
+    min-height: 80vh;
+  }
+  
+  .main-logo {
+    max-width: 85%;
+  }
+  
+  .location-wrap {
+    padding: 1rem 1.5rem;
+  }
+  
+  .location-wrap h5 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 70vh;
+  }
+  
+  .main-logo {
+    max-width: 80%;
+  }
+  
+  .location-wrap {
+    padding: 0.8rem 1.2rem;
+    margin: 0.3rem auto;
+  }
+  
+  .location-wrap h5 {
+    font-size: 1rem;
+  }
+  
+  .animated-navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+  
+  .main-logo {
+    max-width: 75%;
+  }
+  
+  .location-wrap {
+    padding: 0.6rem 1rem;
+    margin: 0.2rem auto;
+  }
+  
+  .location-wrap h5 {
+    font-size: 0.9rem;
+  }
+  
+  .animated-navbar {
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .navbar-brand img {
+    max-height: 35px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+  
+  /* Gallery Responsive */
+  .photo-collage-gallery {
+    padding: 2rem 1rem;
+  }
+  
+  .photo-collage-gallery h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Team Section Mobile */
+  .team-card {
+    margin-bottom: 1rem;
+  }
+  
+  /* Artists Section */
+  .artists-section {
+    min-height: 50vh;
+    background-size: cover;
+  }
+  
+  .guessText {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    min-height: 50vh;
+  }
+  
+  .main-logo {
+    max-width: 70%;
+  }
+  
+  .location-wrap {
+    padding: 0.5rem 0.8rem;
+    margin: 0.15rem auto;
+  }
+  
+  .location-wrap h5 {
+    font-size: 0.8rem;
+  }
+  
+  .animated-navbar {
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .navbar-brand img {
+    max-height: 30px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  /* Gallery Responsive */
+  .photo-collage-gallery {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .photo-collage-gallery h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Artists Section */
+  .artists-section {
+    min-height: 40vh;
+  }
+  
+  .guessText {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 45vh;
+  }
+  
+  .main-logo {
+    max-width: 65%;
+  }
+  
+  .location-wrap {
+    padding: 0.4rem 0.6rem;
+    margin: 0.1rem auto;
+  }
+  
+  .location-wrap h5 {
+    font-size: 0.75rem;
+  }
+  
+  .animated-navbar {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .navbar-brand img {
+    max-height: 25px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.4rem;
+  }
+  
+  /* Gallery Responsive */
+  .photo-collage-gallery {
+    padding: 1rem 0.25rem;
+  }
+  
+  .photo-collage-gallery h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Artists Section */
+  .artists-section {
+    min-height: 35vh;
+  }
+  
+  .guessText {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+}
+
+/* Landscape Orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    min-height: 100vh;
+  }
+  
+  .main-logo {
+    max-width: 60%;
+  }
+  
+  .location-wrap {
+    padding: 0.3rem 0.8rem;
+    margin: 0.1rem auto;
+  }
+  
+  .location-wrap h5 {
+    font-size: 0.8rem;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-logo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  .gallery-item img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-track {
+    animation: none;
+  }
+  
+  .animated-main-logo,
+  .animated-nav-item,
+  .animated-info {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  
+  .team-card:hover {
+    transform: none;
+  }
+  
+  .main-logo:hover {
+    transform: none;
+  }
+  
+  .location-wrap:hover {
+    transform: none;
   }
 }
 
