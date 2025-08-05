@@ -13,8 +13,10 @@ https://templatemo.com/tm-583-festava-live
   --white-color: #ffffff;
   --primary-color: white;
   --secondary-color: #ee5007;
+  /* --secondary-color: #3E000C; */
   --section-bg-color: #f0f8ff;
-  --custom-btn-bg-color: #ee5007;
+  /* --custom-btn-bg-color: #ee5007; */
+  --custom-btn-bg-color: #3E000C;
   --custom-btn-bg-hover-color: #c01f27;
   --dark-color: #000000;
   --p-color: #717275;
@@ -469,6 +471,10 @@ strong {
 
 .sticky-wrapper.is-sticky .navbar {
   background-color: var(--dark-color);
+    /* border-radius: 500px; */
+    /* margin: 10px; */
+    /* margin-top: 5px; */
+
 }
 
 .navbar {
@@ -579,7 +585,8 @@ strong {
   position: relative;
   overflow: hidden;
   padding-top: 100px;
-  height: calc(100vh - 51px);
+  /* height: calc(100vh - 51px); */
+  height: 100vh;
 }
 
 .hero-section small {
@@ -1410,7 +1417,7 @@ strong {
 
 .team-member-details {
   color: #cccccc;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.3;
   margin: 0;
   opacity: 0.8;
