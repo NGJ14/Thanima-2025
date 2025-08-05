@@ -724,8 +724,39 @@
     <script>
         window.addEventListener("load", (event) => {
             setTimeout(() => {
-                document.getElementById("loading").style.display = "none";
-            }, 100);
+                const loading = document.getElementById("loading");
+                const navbar = document.querySelector('.animated-navbar');
+                const mainLogo = document.querySelector('.animated-main-logo');
+                const navItems = document.querySelectorAll('.animated-nav-item');
+                const infoElements = document.querySelectorAll('.animated-info');
+                
+                // Hide the loader with fade out effect
+                loading.style.opacity = "0";
+                loading.style.transition = "opacity 0.5s ease-out";
+                
+                setTimeout(() => {
+                    loading.style.display = "none";
+                    
+                    // Start navbar and logo animations
+                    if (navbar) navbar.style.animation = "slideDownNav 1s ease-out forwards";
+                    if (mainLogo) mainLogo.style.animation = "mainLogoEntrance 1.5s ease-out forwards";
+                    
+                    // Animate nav items with staggered delays
+                    navItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.style.animation = "slideUpNav 0.8s ease-out forwards";
+                        }, 1200 + (index * 100)); // Start after logo animation
+                    });
+                    
+                    // Animate info elements (date, location)
+                    infoElements.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.style.animation = "slideUpInfo 0.8s ease-out forwards";
+                        }, 2300 + (index * 200)); // Start after nav items
+                    });
+                    
+                }, 500); // Wait for fade out to complete
+            }, 2000); // Show loader for 2 seconds
         });
     </script>
     <script>

@@ -2001,42 +2001,32 @@ img:nth-child(15) {
 .animated-navbar {
   opacity: 0;
   transform: translateY(-50px);
-  animation: slideDownNav 1s ease-out 0.5s forwards;
+  animation: none;
 }
 
 .animated-logo {
   opacity: 0;
   transform: scale(0.8);
-  animation: fadeInScale 1s ease-out 1s forwards;
+  animation: none;
 }
 
 .animated-nav-item {
   opacity: 0;
   transform: translateY(-20px);
-  animation: slideUpNav 0.8s ease-out 1.2s forwards;
+  animation: none;
 }
-
-.animated-nav-item:nth-child(1) { animation-delay: 1.2s; }
-.animated-nav-item:nth-child(2) { animation-delay: 1.3s; }
-.animated-nav-item:nth-child(3) { animation-delay: 1.4s; }
-.animated-nav-item:nth-child(4) { animation-delay: 1.5s; }
-.animated-nav-item:nth-child(5) { animation-delay: 1.6s; }
-.animated-nav-item:nth-child(6) { animation-delay: 1.7s; }
 
 .animated-main-logo {
   opacity: 0;
   transform: scale(0.5) translateY(50px);
-  animation: mainLogoEntrance 1.5s ease-out 1.8s forwards;
+  animation: none;
 }
 
 .animated-info {
   opacity: 0;
   transform: translateY(30px);
-  animation: slideUpInfo 1s ease-out 2.3s forwards;
+  animation: none;
 }
-
-.animated-info:nth-child(1) { animation-delay: 2.3s; }
-.animated-info:nth-child(2) { animation-delay: 2.5s; }
 
 /* Animation Keyframes */
 @keyframes slideDownNav {
