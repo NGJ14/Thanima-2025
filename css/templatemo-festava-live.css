@@ -620,7 +620,7 @@ strong {
   padding-top: 100px;
   /* height: calc(100vh - 51px); */
   height: 100vh;
-  background:url('../images/landingBgNoPattern.png');
+  background:url('../images/landingBg.png');
   /* opacity: 0.8; */
   background-size: cover;
 }
@@ -651,9 +651,8 @@ strong {
 -----------------------------------------*/
 .about-section {
   /* background-image: url("../images/pookalam2.jpg"); */
-  background-color: var(--main-clr);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: var(--main-clr);
+  z-index: -10;
   position: relative;
 }
 
@@ -661,7 +660,9 @@ strong {
   border-radius: var(--border-radius-medium);
   display: block;
 }
-
+.aboutText{
+  line-height: 35px;
+}
 .about-text-wrap {
   position: relative;
 }
@@ -679,7 +680,7 @@ strong {
 .about-text-info {
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
+  /* background-color: rgba(255, 255, 255, 0.75); */
   border-radius: var(--border-radius-medium);
   border: 1px solid rgba(209, 213, 219, 0.3);
   position: absolute;
@@ -1622,8 +1623,8 @@ strong {
   align-items: center;
 }
 
-.studentCo h3 {
-  color: rgb(163, 163, 163);
+.studentCo h2 {
+  color: #FFECD1;
 }
 
 .studentList {
@@ -1635,23 +1636,44 @@ strong {
 }
 
 .studentList div {
-  margin: 10px 30px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background: rgba(81, 26, 26, 0.278);
+  padding: 20px;
+  border-radius: 8px;
+  width: 22%;
+  transition: transform 0.2s ease, margin 0.2s ease;
+  z-index: 20;
 }
+.studentList div:hover{
+  transform: scale(1.05);
+  margin: 11px;
+}
+
 
 .studentList div h5 {
   text-align: center;
   /* color: #151515; */
   color: var(--secondary-color);
+  margin-bottom: 10px;
 }
-
+.studentList div ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .studentList div ul li {
   color: rgb(212, 212, 212);
 }
 
 @media screen and (max-width: 991px) {
   .studentList div {
-    width: 32%;
-    margin: 5px 25px;
+    width: 100%;
+    margin: 5px 10px;
   }
 }
 
@@ -2528,7 +2550,7 @@ img:nth-child(15) {
 
 .sideBars{
   background: url('../images/patternDark.png');
-  z-index: 100;
+  /* z-index: 100; */
   width: 99vw;
   height: 100vh;
   background-size: contain;
