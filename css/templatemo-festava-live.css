@@ -1611,7 +1611,7 @@ strong {
 .copyright {
   color: rgb(217, 217, 217);
   padding-top: 30px;
-  border-top: 1px solid #555;
+  /* border-top: 2px solid #fff; */
   font-size: 1.2rem;
 }
 
