@@ -299,62 +299,70 @@ strong {
 /*---------------------------------------
   LOADER               
 -----------------------------------------*/
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
+.w-full {
   width: 100%;
+}
+.h-full {
   height: 100%;
-  background-color: #000;
-  z-index: 9999;
+}
+.fixed {
+  position: fixed;
+}
+.top-0 {
+  top: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.z-50 {
+  z-index: 50;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.m42 {
+  margin-top: 42vh;
+}
+
+.thanima-loader {
+  position: relative;
+  width: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.loading-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-.thanima-logo-loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.thanima-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: brightness(1.2) contrast(1.1);
+  z-index: 1;
+  position: relative;
   animation: logoPulse 2s ease-in-out infinite;
 }
 
-.loader-logo {
-  max-width: 200px;
-  height: auto;
-  filter: brightness(1.2) contrast(1.1);
-}
-
-.flowing-animation {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.flow-line {
-  width: 4px;
-  height: 60px;
-  background: linear-gradient(to bottom, transparent, #333, transparent);
-  animation: flowUp 1.5s ease-in-out infinite;
-}
-
-.flow-line:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.flow-line:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-.flow-line:nth-child(3) {
-  animation-delay: 0.6s;
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.8), transparent);
+  animation: loadingSweep 2s ease-in-out infinite;
+  z-index: 2;
+  border-radius: 50%;
 }
 
 @keyframes logoPulse {
@@ -368,48 +376,40 @@ strong {
   }
 }
 
-@keyframes flowUp {
+@keyframes loadingSweep {
   0% {
-    transform: translateY(20px);
-    opacity: 0;
+    left: -100%;
   }
   50% {
-    opacity: 1;
+    left: 0%;
   }
   100% {
-    transform: translateY(-20px);
-    opacity: 0;
+    left: 100%;
   }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .loader-logo {
-    max-width: 150px;
+  .thanima-loader {
+    width: 100px;
+    height: 100px;
   }
   
-  .flowing-animation {
-    gap: 15px;
-  }
-  
-  .flow-line {
-    width: 3px;
-    height: 50px;
+  .thanima-logo {
+    width: 80px;
+    height: 80px;
   }
 }
 
 @media (max-width: 480px) {
-  .loader-logo {
-    max-width: 120px;
+  .thanima-loader {
+    width: 80px;
+    height: 80px;
   }
   
-  .flowing-animation {
-    gap: 12px;
-  }
-  
-  .flow-line {
-    width: 2px;
-    height: 40px;
+  .thanima-logo {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -2493,5 +2493,6 @@ img:nth-child(15) {
     transform: none;
   }
 }
+
 
 
