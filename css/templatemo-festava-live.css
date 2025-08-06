@@ -2640,5 +2640,5 @@ img:nth-child(15) {
 
 .element {
   /* ... (previous CSS) ... */
-  animation: orbit-shadow 2s linear infinite; /* Apply the animation */
+  animation: orbit-shadow 3s linear infinite; /* Apply the animation */
 }
