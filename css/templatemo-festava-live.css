@@ -623,6 +623,7 @@ strong {
   background:url('../images/landingBg.png');
   /* opacity: 0.8; */
   background-size: cover;
+  background-position: center;
 }
 
 .hero-section small {
@@ -1849,7 +1850,7 @@ img:nth-child(15) {
   }
   
   .guessText {
-    font-size: 2.5rem;
+    font-size: 8.5rem;
   }
 }
 
@@ -2193,7 +2194,8 @@ img:nth-child(15) {
 
 /* Enhanced Main Logo */
 .main-logo {
-  max-width: 100%;
+  max-width: 40%;
+  padding-top: 15vh;
   height: auto;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
   transition: all 0.3s ease;
@@ -2222,6 +2224,9 @@ img:nth-child(15) {
   margin: 0;
   font-weight: 600;
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  background: #00000040;
+  padding: 20px 40px;
+  border-radius: 50px;
 }
 
 /* Enhanced Navbar */
@@ -2263,13 +2268,14 @@ img:nth-child(15) {
 /* Responsive Animations */
 @media (max-width: 768px) {
   .animated-main-logo {
-    max-width: 90%;
+    /* max-width: 90%; */
+    max-height: 40vh;
   }
   
   .location-wrap {
     margin: 0.5rem auto;
   }
-  
+
   .animated-nav-item {
     animation-delay: 1.2s !important;
   }
@@ -2451,7 +2457,7 @@ img:nth-child(15) {
   }
   
   .location-wrap h5 {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
   
   .animated-navbar {
@@ -2559,7 +2565,80 @@ img:nth-child(15) {
   background-attachment: fixed;
   opacity: 0.5;
 }
-.newLogo{
-  height: 60vh;
+/* .newLogo{
+  max-height: 60vh;
   padding-top: 20vh;
+} */
+
+.services-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.services-info h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.element {
+  position: relative; /* Essential for positioning pseudo-elements */
+  /* width: 200px; */
+  /* height: 100px; */
+  background-color: #f0f0f0;
+  overflow: hidden; /* Hides parts of the pseudo-elements outside the element */
+}
+
+.element::before,
+.element::after {
+  content: '';
+  position: absolute;
+  background-color: blue; /* Color of the animated border */
+  transition: all 0.5s ease-in-out; /* Smooth transition for animation */
+}
+
+.element::before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of the top border */
+}
+
+.element::after {
+  bottom: 0;
+  right: 0;
+  width: 2px; /* Thickness of the right border */
+  height: 0;
+}
+
+.element:hover::before {
+  width: 100%; /* Expands the top border on hover */
+}
+
+.element:hover::after {
+  height: 100%; /* Expands the right border on hover */
+}
+
+/* Add more pseudo-elements for other sides (e.g., ::before:hover ~ .element::after for bottom/left) */
+.element {
+  /* ... (previous CSS) ... */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Static shadow */
+}
+
+/* Or animate the shadow on hover */
+.element:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Animated shadow */
+}
+@keyframes orbit-shadow {
+  0% { box-shadow: 1px 1px 1px #FFECD1; }
+  25% { box-shadow: -1px 1px 1px #FFECD1; }
+  50% { box-shadow: -1px -1px 1px #FFECD1; }
+  75% { box-shadow: 1px -1px 1px #FFECD1; }
+  100% { box-shadow: 1px 1px 1px #FFECD1; }
+}
+
+.element {
+  /* ... (previous CSS) ... */
+  animation: orbit-shadow 2s linear infinite; /* Apply the animation */
 }
