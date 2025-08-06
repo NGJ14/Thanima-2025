@@ -1425,21 +1425,21 @@ strong {
   transform: scale(1.05);
 }
 
+.team-card-content {
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
   .team-card-content {
-    position: relative;
-    z-index: 2;
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: left;
   }
-  
-  @media screen and (max-width: 767px) {
-    .team-card-content {
-      flex-grow: 1;
-      text-align: left;
-    }
-  }
+}
 
 .team-member-name {
   color: #ffffff;
@@ -1455,6 +1455,7 @@ strong {
 
 .team-member-role {
   color: var(--custom-btn-bg-hover-color);
+>>>>>>> 6a5531f3ea495a4bec7e7486f225be2ebf94503b
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
@@ -1497,6 +1498,7 @@ strong {
 /* Team Card Mobile Grid Fix */
 @media screen and (max-width: 767px) {
   .team-card {
+<<<<<<< HEAD
     padding: 0.6rem;
     height: auto;
     min-height: 120px;
@@ -1516,6 +1518,7 @@ strong {
     width: 100px;
     flex-shrink: 0;
     margin: 0;
+
   }
   
   .team-member-name {
