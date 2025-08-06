@@ -1542,7 +1542,7 @@ strong {
     width: 100% !important;
     float: none !important;
     padding: 0 0.5rem !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important;
     box-sizing: border-box;
   }
   
@@ -1599,7 +1599,7 @@ strong {
     width: 100% !important;
     float: none !important;
     padding: 0 0.4rem !important;
-    margin-bottom: 0.8rem !important;
+    margin-bottom: 0.4rem !important;
     box-sizing: border-box;
   }
 }
