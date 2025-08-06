@@ -1401,15 +1401,15 @@ strong {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, #ee5007, #ff6b35, #ee5007);
+  background: linear-gradient(90deg, #FFECD1, #FFECD1, #FFECD1);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 .team-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(238, 80, 7, 0.2);
-  border-color: #ee5007;
+  box-shadow: 0 12px 25px rgba(255, 236, 209, 0.3);
+  border-color: #FFECD1;
 }
 
 .team-card:hover::before {
@@ -1446,6 +1446,13 @@ strong {
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .team-card-content {
+    flex-grow: 1;
+    text-align: left;
+  }
+}
+
 .team-member-name {
   color: #ffffff;
   font-size: 1rem;
@@ -1455,11 +1462,12 @@ strong {
 }
 
 .team-card:hover .team-member-name {
-  color: #ee5007;
+  color: var(--secondary-color);
 }
 
 .team-member-role {
-  color: #ee5007;
+  color: var(--custom-btn-bg-hover-color);
+>>>>>>> 6a5531f3ea495a4bec7e7486f225be2ebf94503b
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
@@ -1502,58 +1510,51 @@ strong {
 /* Team Card Mobile Grid Fix */
 @media screen and (max-width: 767px) {
   .team-card {
-    padding: 0.4rem;
+    padding: 1rem;
     height: auto;
-    min-height: 160px;
+    min-height: 140px;
     max-width: 95%;
     margin: 0 auto;
     box-sizing: border-box;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
   }
   
   .team-card-image {
-    margin-bottom: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0;
     aspect-ratio: 1;
-    max-height: 50px;
-    width: 50px;
-    margin: 0 auto 0.3rem auto;
-    max-height: 50px;
-    width: 50px;
-    margin: 0 auto 0.3rem auto;
+    height: 120px;
+    width: 120px;
+    flex-shrink: 0;
+    margin: 0;
   }
   
   .team-member-name {
-    font-size: 0.7rem;
-    margin-bottom: 0.1rem;
-    font-size: 0.7rem;
-    margin-bottom: 0.1rem;
-    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
   }
   
   .team-member-role {
-    font-size: 0.6rem;
-    margin-bottom: 0.15rem;
-    font-size: 0.6rem;
-    margin-bottom: 0.15rem;
-    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
   }
   
   .team-member-details {
-    font-size: 0.5rem;
-    line-height: 1.1;
-    font-size: 0.5rem;
-    line-height: 1.1;
-    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    text-align: left;
   }
   
-  /* Force Bootstrap grid to work */
+  /* Force Bootstrap grid to work - One card per row on mobile */
   .col-sm-6 {
-    width: 50% !important;
-    float: left !important;
-    padding: 0 0.2rem !important;
+    width: 100% !important;
+    float: none !important;
+    padding: 0 0.5rem !important;
     margin-bottom: 0.5rem !important;
-    box-sizing: border-box;
     box-sizing: border-box;
   }
   
@@ -1566,58 +1567,51 @@ strong {
 
 @media screen and (max-width: 575px) {
   .team-card {
-    padding: 0.35rem;
-    padding: 0.35rem;
+    padding: 0.8rem;
     height: auto;
-    min-height: 140px;
-    max-width: 92%;
-    min-height: 140px;
+    min-height: 120px;
     max-width: 92%;
     margin: 0 auto;
     box-sizing: border-box;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
   }
   
   .team-card-image {
-    margin-bottom: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
     aspect-ratio: 1;
-    max-height: 45px;
-    width: 45px;
-    margin: 0 auto 0.25rem auto;
+    height: 100px;
+    width: 100px;
+    flex-shrink: 0;
+    margin: 0;
   }
   
   .team-member-name {
-    font-size: 0.65rem;
-    margin-bottom: 0.08rem;
-    font-size: 0.65rem;
-    margin-bottom: 0.08rem;
-    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.15rem;
+    text-align: left;
   }
   
   .team-member-role {
-    font-size: 0.55rem;
-    margin-bottom: 0.12rem;
-    font-size: 0.55rem;
-    margin-bottom: 0.12rem;
-    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 0.15rem;
+    text-align: left;
   }
   
   .team-member-details {
-    font-size: 0.45rem;
-    line-height: 1.0;
-    font-size: 0.45rem;
-    line-height: 1.0;
-    text-align: center;
+    font-size: 0.6rem;
+    line-height: 1.1;
+    text-align: left;
   }
   
-  /* Force Bootstrap grid to work */
+  /* Force Bootstrap grid to work - One card per row on mobile */
   .col-sm-6 {
-    width: 50% !important;
-    float: left !important;
-    padding: 0 0.15rem !important;
+    width: 100% !important;
+    float: none !important;
+    padding: 0 0.4rem !important;
     margin-bottom: 0.4rem !important;
-    box-sizing: border-box;
     box-sizing: border-box;
   }
 }
