@@ -5,7 +5,7 @@ TemplateMo 583 Festava Live
 https://templatemo.com/tm-583-festava-live
 
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -25,6 +25,8 @@ https://templatemo.com/tm-583-festava-live
   --main-clr:#140004;
   --main-clr:#3E000C;
   --body-font-family: "Outfit", sans-serif;
+  --body-font-family:"Noto Sans", sans-serif;
+
 
   --h1-font-size: 74px;
   --h2-font-size: 46px;
@@ -407,6 +409,7 @@ strong {
     width: 80px;
     height: 80px;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -419,6 +422,15 @@ strong {
     width: 60px;
     height: 60px;
   }
+  .sideBars{
+  background: url('../images/patternDark.png');
+  width: 99vw;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
 }
 
 /*---------------------------------------
@@ -674,7 +686,10 @@ strong {
   display: block;
 }
 .aboutText{
-  line-height: 35px;
+
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  font-weight: 350;
 }
 .about-text-wrap {
   position: relative;
@@ -752,9 +767,14 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  min-height: 80vh;
 }
-
+.artistBg{
+  background: url('../images/artist.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .artists-thumb {
   position: relative;
   overflow: hidden;
@@ -2272,7 +2292,7 @@ img:nth-child(15) {
   animation-delay: 28s;
 }
 .navThanimaImg {
-  height: 5vh;
+  height: 8vh;
   padding: 2px 4vw;
 }
 .developerSection{
@@ -2339,6 +2359,10 @@ img:nth-child(15) {
 }
 
 @media screen and (max-width: 576px) {
+  .infoBoxes{
+    position: absolute;
+    top: 48vh;
+  }
   .artists-section {
     padding: 8vh 0;
     min-height: 35vh;
@@ -3057,12 +3081,10 @@ img:nth-child(15) {
 
 .sideBars{
   background: url('../images/patternDark.png');
-  /* z-index: 100; */
   width: 99vw;
   height: 100vh;
   background-size: contain;
   position: fixed;
-  /* top: 0; */
   background-attachment: fixed;
   opacity: 0.5;
 }
@@ -3095,7 +3117,7 @@ img:nth-child(15) {
 .element::after {
   content: '';
   position: absolute;
-  background-color: blue; /* Color of the animated border */
+  /* background-color: white;  */
   transition: all 0.5s ease-in-out; /* Smooth transition for animation */
 }
 
@@ -3113,24 +3135,13 @@ img:nth-child(15) {
   height: 0;
 }
 
-.element:hover::before {
-  width: 100%; /* Expands the top border on hover */
-}
-
-.element:hover::after {
-  height: 100%; /* Expands the right border on hover */
-}
-
 /* Add more pseudo-elements for other sides (e.g., ::before:hover ~ .element::after for bottom/left) */
 .element {
   /* ... (previous CSS) ... */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Static shadow */
 }
 
-/* Or animate the shadow on hover */
-.element:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Animated shadow */
-}
+
 @keyframes orbit-shadow {
   0% { box-shadow: 1px 1px 1px #FFECD1; }
   25% { box-shadow: -1px 1px 1px #FFECD1; }
