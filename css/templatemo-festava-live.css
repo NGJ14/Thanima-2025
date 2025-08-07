@@ -1083,31 +1083,222 @@ strong {
 /*---------------------------------------
   PRE-THANIMA SECTION               
 -----------------------------------------*/
-.preThanimaBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Pre Thanima Modern Card Carousel */
+.pre-thanima-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-.preThanimaBox div img {
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.pre-thanima-card {
+  min-width: 280px;
+  background: linear-gradient(145deg, var(--main-clr), #000);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.pre-thanima-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FFECD1, #FFECD1, #FFECD1);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.pre-thanima-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(255, 236, 209, 0.2);
+  border-color: #FFECD1;
+}
+
+.pre-thanima-card:hover::before {
+  transform: scaleX(1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-number {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFECD1;
+  background: rgba(255, 236, 209, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 236, 209, 0.3);
+}
+
+.card-icon {
+  font-size: 1.5rem;
   opacity: 0.8;
 }
-@media screen and (min-width: 991px) {
-  .preThanimaBox div img {
-    width: 30vw;
-    height: 26vw;
-    margin: 3px;
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.card-title {
+  color: #FFECD1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.card-subtitle {
+  color: var(--custom-btn-bg-hover-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-description {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.carousel-btn {
+  background: linear-gradient(145deg, var(--main-clr), #000);
+  border: 2px solid #FFECD1;
+  color: #FFECD1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carousel-btn:hover {
+  background: #FFECD1;
+  color: var(--main-clr);
+  transform: scale(1.1);
+}
+
+.carousel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+  .pre-thanima-card {
+    min-width: 250px;
+    padding: 1.2rem;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+  
+  .card-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .card-description {
+    font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 991px) {
-  .preThanimaBox {
-    display: flex;
-    flex-direction: column;
+
+@media screen and (max-width: 767px) {
+  .pre-thanima-card {
+    min-width: 220px;
+    padding: 1rem;
   }
-  .preThanimaBox div {
-    margin: 5px 0;
+  
+  .carousel-track {
+    gap: 1rem;
   }
-  .preThanimaBox div img {
-    max-width: 80vw;
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .card-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .card-description {
+    font-size: 0.75rem;
+  }
+  
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pre-thanima-card {
+    min-width: 200px;
+    padding: 0.8rem;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+  }
+  
+  .card-subtitle {
+    font-size: 0.75rem;
+  }
+  
+  .card-description {
+    font-size: 0.7rem;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 }
 
@@ -1455,7 +1646,6 @@ strong {
 
 .team-member-role {
   color: var(--custom-btn-bg-hover-color);
->>>>>>> 6a5531f3ea495a4bec7e7486f225be2ebf94503b
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
