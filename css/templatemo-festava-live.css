@@ -409,6 +409,7 @@ strong {
     width: 80px;
     height: 80px;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -421,6 +422,15 @@ strong {
     width: 60px;
     height: 60px;
   }
+  .sideBars{
+  background: url('../images/patternDark.png');
+  width: 99vw;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
 }
 
 /*---------------------------------------
@@ -757,9 +767,14 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  min-height: 80vh;
 }
-
+.artistBg{
+  background: url('../images/artist.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .artists-thumb {
   position: relative;
   overflow: hidden;
@@ -1776,7 +1791,7 @@ img:nth-child(15) {
   animation-delay: 28s;
 }
 .navThanimaImg {
-  height: 5vh;
+  height: 8vh;
   padding: 2px 4vw;
 }
 .developerSection{
@@ -2565,12 +2580,10 @@ img:nth-child(15) {
 
 .sideBars{
   background: url('../images/patternDark.png');
-  /* z-index: 100; */
   width: 99vw;
   height: 100vh;
   background-size: contain;
   position: fixed;
-  /* top: 0; */
   background-attachment: fixed;
   opacity: 0.5;
 }
