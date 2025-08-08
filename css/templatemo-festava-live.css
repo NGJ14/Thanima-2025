@@ -2311,8 +2311,8 @@ img:nth-child(15) {
   -webkit-text-fill-color: transparent;
 }
 .preTText {
-  color: #ffffffcc;
-  font-size: 1.5rem;
+  color: #fffffff4;
+  font-size: 1.3rem;
   padding: 5vh 80px;
   font-weight: 500;
 }
@@ -3253,37 +3253,26 @@ img:nth-child(15) {
   animation: orbit-shadow 3s linear infinite; /* Apply the animation */
 }
 
-.tableContainer {
-  padding: 20px;
-  background: #180005d2;
-  border-radius: 20px;
-  margin-bottom: 10vh;
+.table{
+  display: flex;
+  justify-content: center;
 }
-
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
+.table table {
   border-collapse: collapse;
-  width: 100%;
+  width: 70%;
+  background: #a09582c6;
+  
 }
-
-#customers td,
-#customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+.table table th{
+  background: #000;
+  color: #fff;
 }
-
-#customers tr {
-  background-color: #f2f2f2;
-}
-
-#customers tr:hover {
-  background-color: #ddd;
-}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+.table table th, .table table td {
   text-align: center;
-  background-color: #ffecd1;
-  color: #3e000c;
+  /* border: #000 2px solid; */
+  padding: 8px;
+  font-weight: 600;
+  padding: 12px;
 }
+
+.table table tr:nth-child(even) {background-color: #b4b4b4cf;}
