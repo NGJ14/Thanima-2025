@@ -2810,7 +2810,6 @@ img:nth-child(15) {
 .main-logo {
   max-height: 70%;
   padding-top: 15vh;
-  height: auto;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
   transition: all 0.3s ease;
 }
