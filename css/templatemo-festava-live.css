@@ -1117,31 +1117,532 @@ strong {
 /*---------------------------------------
   PRE-THANIMA SECTION               
 -----------------------------------------*/
-.preThanimaBox {
+/* Pre Thanima Cards Grid - Desktop */
+.pre-thanima-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+/* Show desktop grid on desktop, hide on mobile */
+.pre-thanima-grid {
+  display: grid;
+}
+
+/* Hide mobile slider on desktop, show on mobile */
+.pre-thanima-slider {
+  display: none;
+}
+
+/* Mobile view - show animated slider, hide fixed grid */
+@media screen and (max-width: 767px) {
+  .pre-thanima-grid {
+    display: none;
+  }
+  
+  .pre-thanima-slider {
+    display: flex;
+  }
+}
+
+/* Desktop view - show fixed grid, hide animated slider */
+@media screen and (min-width: 768px) {
+  .pre-thanima-grid {
+    display: grid;
+  }
+  
+  .pre-thanima-slider {
+    display: none;
+  }
+}
+
+/* Pre Thanima Card Slider - Mobile */
+.pre-thanima-slider {
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  width: 100%;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: visible;
+  max-width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-.preThanimaBox div img {
+
+.grid-card {
+  width: 100%;
+  height: 494px;
+  background: linear-gradient(145deg, rgba(255, 236, 209, 0.08), rgba(0, 0, 0, 0.9));
+  border: 2px solid rgba(255, 236, 209, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(15px);
+  color: #FFECD1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  word-wrap: break-word;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile Slider Cards */
+.item {
+  position: absolute;
+  width: 220px;
+  height: 372px;
+  background: linear-gradient(145deg, rgba(255, 236, 209, 0.08), rgba(0, 0, 0, 0.9));
+  border: 2px solid rgba(255, 236, 209, 0.2);
+  border-radius: 20px;
+  padding: 18px;
+  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  backdrop-filter: blur(15px);
+  color: #FFECD1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.item p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #cccccc;
+  flex-grow: 1;
+  text-align: left;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+/* No hover effects for any cards */
+
+.item h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #FFECD1;
+}
+
+.item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  color: var(--custom-btn-bg-hover-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.grid-card h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  color: #FFECD1;
+  text-align: center;
+}
+
+.grid-card p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #cccccc;
+  flex-grow: 1;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+.event-section {
+  margin-bottom: 12px;
+  padding: 15px;
+  background: rgba(255, 236, 209, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 236, 209, 0.1);
+  width: 100%;
+}
+
+.event-section:last-child {
+  margin-bottom: 0;
+}
+
+.event-section h4 {
+  color: #FFECD1;
+  font-size: 0.9rem;
+  margin: 0 0 8px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.event-section p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #cccccc;
+  text-align: center;
+  -webkit-line-clamp: 10;
+}
+
+.event-section p strong:first-child {
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+  color: #FFECD1;
+  font-weight: 700;
+}
+
+/* Mobile view - reduce font sizes */
+@media screen and (max-width: 767px) {
+  .event-section p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    -webkit-line-clamp: 8;
+  }
+  
+  .event-section p strong:first-child {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+  }
+}
+
+/* Container for stacked event sections */
+.event-sections-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFECD1;
+  background: rgba(255, 236, 209, 0.1);
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 236, 209, 0.3);
+}
+
+.card-icon {
+  font-size: 1.4rem;
   opacity: 0.8;
 }
-@media screen and (min-width: 991px) {
-  .preThanimaBox div img {
-    width: 30vw;
-    height: 26vw;
-    margin: 3px;
+
+.card-footer {
+  margin-top: 10px;
+}
+
+.event-type {
+  background: rgba(255, 236, 209, 0.2);
+  color: #FFECD1;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 236, 209, 0.3);
+}
+
+#next, #prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFECD1;
+  background: rgba(255, 236, 209, 0.1);
+  border: 2px solid rgba(255, 236, 209, 0.3);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#next:hover, #prev:hover {
+  background: rgba(255, 236, 209, 0.2);
+  border-color: rgba(255, 236, 209, 0.6);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 10px 25px rgba(255, 236, 209, 0.3);
+}
+
+#prev {
+  left: 2rem;
+}
+
+#next {
+  right: 2rem;
+}
+
+/* Section title responsiveness */
+.pre-thanima-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFECD1;
+}
+
+/* Responsive Design for Card Slider */
+@media screen and (max-width: 991px) {
+  .pre-thanima-slider {
+    min-height: 450px;
+    padding: 0 0.5rem;
+  }
+  
+  .pre-thanima-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .slider {
+    height: 400px;
+    max-width: 1000px;
+  }
+  
+  .item {
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+  }
+  
+  .item h1 {
+    font-size: 1.6rem;
+  }
+  
+  .item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .item p {
+    font-size: 0.85rem;
   }
 }
+
 @media screen and (max-width: 991px) {
-  .preThanimaBox {
-    display: flex;
-    flex-direction: column;
+  .pre-thanima-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 0.5rem;
   }
-  .preThanimaBox div {
-    margin: 5px 0;
+  
+  .pre-thanima-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
-  .preThanimaBox div img {
-    max-width: 80vw;
+}
+  
+  .item {
+    width: 220px;
+    height: 370px;
+    padding: 18px;
+  }
+  
+  .item h1 {
+    font-size: 1.0rem;
+  }
+  
+  .item h3 {
+    font-size: 1rem;
+  }
+  
+  .item p {
+    font-size: 0.8rem;
+  }
+  
+  #next, #prev {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  #prev {
+    left: 0.5rem;
+  }
+  
+  #next {
+    right: 0.5rem;
+  }
+
+
+@media screen and (max-width: 767px) {
+  .pre-thanima-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 0.3rem;
+  }
+  
+  .pre-thanima-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-card {
+    height: 380px;
+    padding: 15px;
+  }
+  
+  .grid-card h1 {
+    font-size: 1.6rem;
+  }
+  
+  .grid-card p {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 6;
+  }
+}
+  
+  .grid-card {
+    height: 494px;
+    padding: 20px;
+  }
+  
+  .grid-card h1 {
+    font-size: 2.2rem;
+  }
+  
+  .grid-card p {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 4;
+  }
+
+
+@media screen and (max-width: 575px) {
+  .pre-thanima-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.3rem;
+  }
+  
+  .pre-thanima-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-card {
+    height: 350px;
+    padding: 12px;
+  }
+  
+  .grid-card h1 {
+    font-size: 1.4rem;
+  }
+  
+  .grid-card p {
+    font-size: 0.7rem;
+    -webkit-line-clamp: 4;
+  }
+  
+  .event-section p {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    -webkit-line-clamp: 6;
+  }
+  
+  .event-section p strong:first-child {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+  
+  .card-number {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.6rem;
+  }
+  
+  .card-icon {
+    font-size: 1.2rem;
+  }
+  
+  .event-type {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .pre-thanima-grid {
+    gap: 0.5rem;
+    padding: 0;
+  }
+  
+  .pre-thanima-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .grid-card {
+    height: 300px;
+    padding: 12px;
+  }
+  
+  .grid-card h1 {
+    font-size: 1rem;
+  }
+  
+  .grid-card p {
+    font-size: 0.65rem;
+    -webkit-line-clamp: 3;
+  }
+  
+  .card-number {
+    font-size: 0.8rem;
+    padding: 0.15rem 0.5rem;
+  }
+  
+  .card-icon {
+    font-size: 1rem;
+  }
+  
+  .event-type {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
   }
 }
 
