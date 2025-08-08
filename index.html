@@ -73,7 +73,8 @@
                 </button>
                 <a href="#section_1" class="nav-logo-link">
                     <!-- <img class="navThanimaImg" src="./images/Viswanathan.jpg" alt=""> -->
-                    <img class="navThanimaImg" src="./images/vit_logo.png" alt="">
+                    <img class="navVitImg navLogo" src="./images/vit_logo.png" alt="">
+                    <img class="navThanimaImg navLogo" src="./images/logoOnly.png" alt="">
                 </a>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -616,7 +617,7 @@
                 <div class="row justify-content-center">
 
                     <div class="col-12 text-center">
-                        <h2 style="color: #FFECD1;" class="mb-4">Meet The Team</h2>
+                        <h2 style="color: #FFECD1;" class="mb-4">Our Patrons</h2>
                     </div>
 
                     <div class="row justify-content-center">
@@ -627,7 +628,7 @@
                                 </div>
                                 <div class="team-card-content">
                                     <h3 class="team-member-name">Dr. G.Viswanathan</h3>
-                                    <p class="team-member-details">Founder & Chancellor of VIT University</p>
+                                    <p class="team-member-details">Chancellor of VIT University</p>
                                 </div>
                             </div>
                         </div>
@@ -663,12 +664,12 @@
                                 </div>
                                 <div class="team-card-content">
                                     <h3 class="team-member-name">Dr. G V Selvam</h3>
-                                    <p class="team-member-details">Vice-Chairman of Vellore Institute of Technology</p>
+                                    <p class="team-member-details">Vice-President of Vellore Institute of Technology</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
+                        <!-- </div>
+                    <div class="row justify-content-center"> -->
 
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
                             <div class="team-card">
@@ -690,14 +691,15 @@
                                 </div>
                                 <div class="team-card-content">
                                     <h3 class="team-member-name">Dr. Kadhambari S Viswanathan</h3>
-                                    <p class="team-member-details">Executive Director of Vellore Institute of Technology
+                                    <p class="team-member-details">Assistant Vice-President of Vellore Institute of
+                                        Technology
                                     </p>
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                        <!-- <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
                             <div class="team-card">
                                 <div class="team-card-image">
                                     <img src="./images/naiju.jpeg" alt="Dr. C.D. Naiju">
@@ -708,8 +710,22 @@
                                         Director Students' Welfare Ofiice</p>
                                 </div>
                             </div>
+                        </div> -->
+                    </div>
+                    <div class="col-12 pt-4 text-center">
+                        <h2 style="color: #FFECD1;" class="mb-4">Faculty</h2>
+                    </div>
+                    <div class="col-12 facSec">
+                        <div class="py-2">
+                            <h5>Dr. Naiju C D</h5>
+                            <h6>(Faculty Advisor)</h6>
+                        </div>
+                        <div class="py-2">
+                            <h5>Dr Jagdeesh Kumar M S</h5>
+                            <h6>(Faculty Organizer)</h6>
                         </div>
                     </div>
+
                     <div class="studentCo mt-4 pt-4">
                         <h2>Student Organizers</h2>
                         <div class="studentList">
@@ -996,6 +1012,17 @@
                 });
             }
         });
+    </script>
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 300) { // adjust 50px to where you want the swap
+                navbar.classList.add("scroll");
+            } else {
+                navbar.classList.remove("scroll");
+            }
+        });
+
     </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
