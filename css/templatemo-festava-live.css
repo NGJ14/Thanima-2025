@@ -2808,7 +2808,7 @@ img:nth-child(15) {
 
 /* Enhanced Main Logo */
 .main-logo {
-  max-width: 40%;
+  max-height: 70%;
   padding-top: 15vh;
   height: auto;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
