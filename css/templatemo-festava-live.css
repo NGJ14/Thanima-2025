@@ -3154,9 +3154,25 @@ img:nth-child(15) {
   .navbar-brand img {
     max-height: 25px;
   }
-
+  .navbar-toggler{
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    z-index: 10000;
+  }
+  .navbar-nav{
+    background: linear-gradient(#000000da 45%, transparent);
+    /* background: #000; */
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+  }
   .navbar-nav .nav-link {
-    font-size: 0.7rem;
+    font-size: 1.4rem;
     padding: 0.25rem 0.4rem;
   }
 
