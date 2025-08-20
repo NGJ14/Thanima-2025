@@ -2246,6 +2246,7 @@ strong {
 }
 .studentList div ul li {
   color: rgb(212, 212, 212);
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {
