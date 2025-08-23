@@ -3643,8 +3643,8 @@ img:nth-child(15) {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #e71b20;
-  color: var(--btn-text);
+  background: #ffecd1;
+  color: #000;
   text-decoration: none;
   font: 600 14px/1.1 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
   letter-spacing: .3px;
@@ -3655,6 +3655,7 @@ img:nth-child(15) {
   isolation: isolate; /* keep pseudo-elements behind text */
   will-change: transform;
   z-index: 15;
+  font-weight: 800;
 }
 
 /* crisp text inside */
