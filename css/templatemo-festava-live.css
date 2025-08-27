@@ -1365,8 +1365,6 @@ strong {
   font-weight: 700;
 }
 
-
-
 /* Mobile view - reduce font sizes */
 @media screen and (max-width: 767px) {
   .event-section p {
@@ -1528,11 +1526,11 @@ strong {
   }
 }
 
-  .item {
-    width: 220px;
-    height: 409px;
-    padding: 18px;
-  }
+.item {
+  width: 220px;
+  height: 409px;
+  padding: 18px;
+}
 
 .item h1 {
   font-size: 1rem;
@@ -1608,7 +1606,7 @@ strong {
     gap: 1rem;
     padding: 0 0.3rem;
   }
-  
+
   .pre-thanima-section h2 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
@@ -1652,6 +1650,7 @@ strong {
     font-size: 0.7rem;
     padding: 0.2rem 0.6rem;
   }
+  
 }
 
 @media screen and (max-width: 360px) {
@@ -2461,6 +2460,7 @@ img:nth-child(15) {
   .guessText {
     font-size: 8.5rem;
   }
+  
 }
 
 /*---------------------------------------
@@ -3157,13 +3157,13 @@ img:nth-child(15) {
   .navbar-brand img {
     max-height: 25px;
   }
-  .navbar-toggler{
+  .navbar-toggler {
     /* position: absolute; */
     /* top: 0; */
     /* right: 0; */
     z-index: 10000;
   }
-  .navbar-nav{
+  .navbar-nav {
     background: linear-gradient(#000000da 45%, transparent);
     /* background: #000; */
     position: absolute;
@@ -3602,38 +3602,36 @@ img:nth-child(15) {
   width: 100%;
   border-radius: 12px;
 }
-@media screen and (max-width: 575px){
+@media screen and (max-width: 575px) {
   .PreGames {
     display: flex;
     flex-direction: column;
   }
-  .PreGames div{
+  .PreGames div {
     width: 100%;
-
   }
-  .preTText{
+  .preTText {
     padding: 0;
   }
 }
-.registerBtn{
+.registerBtn {
   background: #ffecd1;
   color: #000;
-
 }
 
 /* ===== Customizable bits ===== */
-:root{
-  --btn-size: 88px;            /* diameter */
-  --btn-bg: #ff4757;           /* button color */
-  --btn-text: #ffffff;         /* text color */
-  --shadow: 0 10px 20px rgba(0,0,0,.18), 0 6px 10px rgba(0,0,0,.12);
-  --corner-offset: 22px;       /* distance from screen edges */
-  --ring-gap: 6px;             /* space between button and zigzag ring */
-  --ring-thickness: 10px;      /* thickness of the zigzag ring */
+:root {
+  --btn-size: 88px; /* diameter */
+  --btn-bg: #ff4757; /* button color */
+  --btn-text: #ffffff; /* text color */
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.18), 0 6px 10px rgba(0, 0, 0, 0.12);
+  --corner-offset: 22px; /* distance from screen edges */
+  --ring-gap: 6px; /* space between button and zigzag ring */
+  --ring-thickness: 10px; /* thickness of the zigzag ring */
 }
 
 /* ===== Base button ===== */
-.register-btn{
+.register-btn {
   position: fixed;
   right: 5vh;
   /* bottom: var(--corner-offset); */
@@ -3646,8 +3644,9 @@ img:nth-child(15) {
   background: #ffecd1;
   color: #000;
   text-decoration: none;
-  font: 600 14px/1.1 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
-  letter-spacing: .3px;
+  font: 600 14px/1.1 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    "Helvetica Neue", Arial;
+  letter-spacing: 0.3px;
   text-align: center;
   box-shadow: var(--shadow);
   transform: scale(1);
@@ -3659,65 +3658,141 @@ img:nth-child(15) {
 }
 
 /* crisp text inside */
-.register-btn span{ transform: translateY(0.5px); }
+.register-btn span {
+  transform: translateY(0.5px);
+}
 
 /* Hover/active/focus interactions */
-.register-btn:hover{ transform: scale(1.05); }
-.register-btn:active{ transform: scale(0.98); }
-.register-btn:focus-visible{
+.register-btn:hover {
+  transform: scale(1.05);
+}
+.register-btn:active {
+  transform: scale(0.98);
+}
+.register-btn:focus-visible {
   outline: none;
-  box-shadow:
-    0 0 0 3px #fff,
-    0 0 0 6px color-mix(in oklab, var(--btn-bg), #000 25%),
-    var(--shadow);
+  box-shadow: 0 0 0 3px #fff,
+    0 0 0 6px color-mix(in oklab, var(--btn-bg), #000 25%), var(--shadow);
 }
 
 /* ===== Zigzag/perforated "scissor cut" ring ===== */
 /* Uses a conic-gradient to create repeated wedges (zigzag/dash look)
    and masks it into a circular ring around the button */
-.register-btn::before{
+.register-btn::before {
   content: "";
   position: absolute;
   inset: calc(-1 * (var(--ring-gap) + var(--ring-thickness)));
   border-radius: 50%;
   z-index: -1;
   /* Create alternating wedge + gap */
-  background:
-    conic-gradient(
-      from -9deg,
-      /* rgba(0,0,0,.25) 0 12deg,   wedge */
-      transparent 12deg 18deg    /* gap */
-    );
+  background: conic-gradient(
+    from -9deg,
+    /* rgba(0,0,0,.25) 0 12deg,   wedge */ transparent 12deg 18deg /* gap */
+  );
   /* Keep only a ring area */
-  -webkit-mask:
-    radial-gradient(farthest-side, transparent calc(100% - var(--ring-thickness)), #000 0);
-  mask:
-    radial-gradient(farthest-side, transparent calc(100% - var(--ring-thickness)), #000 0);
-  filter: drop-shadow(0 1px 0 rgba(0,0,0,.12));
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--ring-thickness)),
+    #000 0
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--ring-thickness)),
+    #000 0
+  );
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.12));
 }
 
 /* Optional subtle inner highlight ring for depth */
-.register-btn::after{
+.register-btn::after {
   content: "";
   position: absolute;
   inset: 4px;
   border-radius: 50%;
-  box-shadow: inset 0 2px 8px rgba(255,255,255,.25), inset 0 -6px 10px rgba(0,0,0,.15);
+  box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.25),
+    inset 0 -6px 10px rgba(0, 0, 0, 0.15);
   pointer-events: none;
 }
 
 /* Breathing animation (very slight) */
-@keyframes btn-breathe{
-  0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.4); }
+@keyframes btn-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
 }
 
 /* Respect reduced motion preferences */
-@media (prefers-reduced-motion: reduce){
-  .register-btn{ animation: none; }
+@media (prefers-reduced-motion: reduce) {
+  .register-btn {
+    animation: none;
+  }
 }
 
 /* Small screens: nudge away from edges a touch more if needed */
-@media (max-width: 420px){
-  :root{ --corner-offset: 18px; }
+@media (max-width: 420px) {
+  :root {
+    --corner-offset: 18px;
+  }
+}
+
+.winSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.winRow {
+  display: flex;
+}
+.winBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+  z-index: 10;
+  transition: transform 0.2s ease, margin 0.2s ease;
+}
+.winImg img {
+  width: 90%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.winDesc {
+  background: linear-gradient(#000000a9 75%, transparent);
+  width: 90%;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  /* border: 2px rgb(154, 112, 112) solid; */
+  /* border-top: none; */
+}
+.winName {
+  font-size: 1.4rem;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.winPos {
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  color: #f4f4f4;
+}
+.winBox:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 480px){
+  .winRow{
+    display: flex;
+    flex-direction: column;
+  }
+  .winBox{
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
