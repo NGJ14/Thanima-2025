@@ -535,7 +535,8 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: var(--dark-color);
+  background-color: rgba(29, 0, 0, 0.873); /* Semi-transparent background */
+      backdrop-filter: blur(10px);
   /* border-radius: 500px; */
   /* margin: 10px; */
   /* margin-top: 5px; */
