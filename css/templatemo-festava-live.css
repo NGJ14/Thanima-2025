@@ -3760,8 +3760,8 @@ img:nth-child(15) {
 }
 .winImg img {
   width: 90%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .winDesc {
   background: linear-gradient(#000000a9 75%, transparent);
