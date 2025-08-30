@@ -777,7 +777,7 @@ strong {
   min-height: 80vh;
 }
 .artistBg {
-  background: url("../images/artist.jpeg");
+  /* background: url("../images/artist.jpeg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3880,4 +3880,19 @@ img:nth-child(15) {
   .sponsors-slider {
     width: calc(140px * 10);
   }
+}
+.artistImg{
+  /* margin: 0 10px; */
+  /* width: 100%; */
+  padding: 0 auto;
+  height: 70vh;
+  border-radius: 10px;
+}
+.artistName{
+  text-align: left;
+}
+.artistCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
